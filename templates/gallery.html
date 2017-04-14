@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load cms_tags %}
+
+{% block content %}
+  
+    <!-- Requires Foundation 4 | visit http://foundation.zurb.com to download -->
+
+<!-- Header and Nav -->
+
+<div class="row">
+	<div class="large-11 columns">
+		<div class="large-7 columns">
+ {% placeholder "main" or %}
+        {% endplaceholder %}
+  </div>
+  <div class="large-4 columns">
+ {% placeholder "sidebar" or %}
+        {% endplaceholder %}
+        </div>
+  </div> 
+  </div>
+{% endblock content %}
+

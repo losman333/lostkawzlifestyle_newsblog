@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% load cms_tags %}
+
+
+
+{% block content %}
+<br>
+  <div class="row">
+   <div class="large-10 large-centered	small-expanded columns"> 
+<br>
+ {% placeholder "main" or %}
+        {% endplaceholder %}
+       
+	     <br>
+	     <br>
+   
+    <div class="large-6 medium-6 small-12 columns" >
+	
+        {% placeholder "latest1" or %}
+        {% endplaceholder %}
+
+
+   </div>
+   <div class="large-6  medium-6 small-12 columns" >
+
+        {% placeholder "latest2" or %}
+        {% endplaceholder %}
+
+
+   </div>
+ 
+ </div
+  
+</div>
+</div>
+{% endblock content %}
+
+

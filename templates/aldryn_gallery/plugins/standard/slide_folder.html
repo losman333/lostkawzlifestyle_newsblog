@@ -1,0 +1,51 @@
+
+	<div class="row">
+	<div class="large-12, medium-12, small-12">
+
+			
+			<div id="grid-gallery" class="grid-gallery">
+				<section class="grid-wrap">
+					
+
+
+					<ul class="grid">
+						{% for image in instance.folder.files %}
+						<li class="grid-sizer"></li><!-- for Masonry column width -->
+						<li>
+							<figure>
+								{% include slide_template %}	
+								
+							</figure>
+						</li>
+						{% endfor %} 
+					</ul>
+					
+				</section><!-- // grid-wrap -->
+				<section class="slideshow">
+					
+	
+
+
+					<ul>
+						{% for image in instance.folder.files %}
+						<li>
+							<figure>
+								
+								{% include slide_template %}
+							</figure>
+						</li>
+						{% endfor %} 
+					</ul>
+					<nav>
+						<span class="icon nav-prev"></span>
+						<span class="icon nav-next"></span>
+						<span class="icon nav-close"></span>
+					</nav>
+					<div class="info-keys icon">Navigate with arrow keys</div>
+				
+				</section><!-- // slideshow -->
+			</div><!-- // grid-gallery -->
+		</div>
+		</div>
+
+

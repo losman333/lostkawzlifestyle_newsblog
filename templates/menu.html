@@ -1,0 +1,37 @@
+{% load menu_tags %}
+<div id="siteNavStickyContainer" data-sticky-container>
+                <div id="siteNavStickyWrap" class="sticky" data-sticky data-sticky-on="small" data-anchor="siteContainer" data-margin-top="0">
+                    <div id="siteNavToggler" class="title-bar" data-responsive-toggle="siteNav" data-hide-for="medium"> 
+ <div class="title-bar" data-responsive-toggle="main-menu" data-hide-for="medium">
+    <button class="menu-icon" type="button" data-toggle></button>
+    <div class="title-bar-title"></div>
+  </div>                    </div>
+                    <div id="siteNav"> 
+	<div class="top-bar" id="main-menu">
+		<div class="logo-wrapper logo-wrapper-small hide-for-small-only">
+    <div class="logo logo-small">
+      <img src="/static/images/logo.png" alt="logo" style="width:255px;height:100px;">
+    </div>
+  </div>
+  	<div class="top-bar-left">
+  <ul class="vertical medium-horizontal menu">
+{% for child in children %}
+
+
+<li class="child{% if child.selected %} selected{% endif %}{% if child.ancestor %} ancestor{% endif %}{% if child.sibling %} sibling{% endif %}{% if child.descendant %} descendant{% endif %}">
+	<a href="{{ child.attr.redirect_url|default:child.get_absolute_url }}">{{ child.get_menu_title }}</a>
+	{% if child.children %}
+
+		{% show_menu from_level to_level extra_inactive extra_active template "" "" child %}
+	
+ 
+	{% endif %}
+</li>
+{% endfor %}
+</ul>
+ </div>
+</div>
+                    </div>
+                </div>
+            </div>
+           
