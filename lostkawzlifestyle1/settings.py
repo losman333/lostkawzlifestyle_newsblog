@@ -22,11 +22,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: keep the secret key used in production secret!
 #SECRET_KEY = 'yz-fw!1!o!bl%4njsa!b-k50f_n+y+8g(+(^r(5yn7&^vlrp+r'
 
-SECRET_KEY = ('$3on5o=qsgr+(wz9$e8thtz$9x!x$j^)0$_s&p$f^6k2x5t%^(')
+SECRET_KEY = ('yz-fw!1!o!bl%4njsa!b-k50f_n+y+8g(+(^r(5yn7&^vlrp+r')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = True
-DEBUG = config('DEBUG', default=False, cast=bool)
+DEBUG = bool( os.environ.get('DJANGO_DEBUG', True) )
 
 ALLOWED_HOSTS = ['https://lostkawzlifestyle.herokuapp.com/']
 
