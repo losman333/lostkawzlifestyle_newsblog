@@ -211,7 +211,7 @@ import dj_database_url
 db_from_env = dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(db_from_env)
 
-MEDIA_ROOT = os.path.join(PROJECT_PATH, "media")
+MEDIA_ROOT = os.path.join(PROJECT_PATH, "lostkawzlifestyle1/media")
 MEDIA_URL = "/media/"
 
 # Static files (CSS, JavaScript, Images)
