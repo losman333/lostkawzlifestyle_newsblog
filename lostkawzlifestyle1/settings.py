@@ -20,12 +20,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.9/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = 'yz-fw!1!o!bl%4njsa!b-k50f_n+y+8g(+(^r(5yn7&^vlrp+r'
+#SECRET_KEY = 'yz-fw!1!o!bl%4njsa!b-k50f_n+y+8g(+(^r(5yn7&^vlrp+r'
 import os
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'cg#p$g+j9tax!#a3cup@1$8obt2_+&k3q+pmu)5%asj6yjpkag')
+
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = True
-DEBUG = bool( os.environ.get('DJANGO_DEBUG', True) )
+DEBUG = True
 
 ALLOWED_HOSTS = []
 
@@ -43,8 +43,6 @@ INSTALLED_APPS = [
     'cms',
     'menus',
     'treebeard',
-    'gunicorn',
-    ''
    
     
     'django.contrib.sites',
@@ -89,7 +87,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 ]
-
 
 MIDDLEWARE_CLASSES = [
     
@@ -151,11 +148,14 @@ WSGI_APPLICATION = 'lostkawzlifestyle1.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'lostkawzlifestyle',
+        'USER': 'postgres',
+        'HOST': 'localhost',
+        'PORT': '',
+        'PASSWORD': '',
     }
 }
-
 
 
 # Password validation
@@ -203,33 +203,14 @@ USE_L10N = True
 
 USE_TZ = True
 
+MEDIA_URL = "/static/media/"
+MEDIA_ROOT = os.path.join(BASE_DIR, "static/media")
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
-import dj_database_url
-db_from_env = dj_database_url.config(conn_max_age=500)
-DATABASES['default'].update(db_from_env)
-
-MEDIA_ROOT = os.path.join(PROJECT_PATH, "lostkawzlifestyle1/media")
-MEDIA_URL = "/media/"
-
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/1.10/howto/static-files/
-
-# The absolute path to the directory where collectstatic will collect static files for deployment.
-PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 
-# Extra places for collectstatic to find static files.
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
-)
-
-# Heroku: Update database configuration from $DATABASE_URL.
-
-
-# Simplified static file serving.
-# https://warehouse.python.org/project/whitenoise/
-STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"),
+]
