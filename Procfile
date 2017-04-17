@@ -1,1 +1,1 @@
-web: gunicorn locallibrary.wsgi --log-file -
+web: gunicorn lostkawzlifestyle_newsblog.wsgi --log-file -
