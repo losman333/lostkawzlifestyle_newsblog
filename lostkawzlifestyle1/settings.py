@@ -29,7 +29,7 @@ SECRET_KEY = ('yz-fw!1!o!bl%4njsa!b-k50f_n+y+8g(+(^r(5yn7&^vlrp+r')
 # DEBUG = True
 DEBUG = bool( os.environ.get('DJANGO_DEBUG', True) )
 
-ALLOWED_HOSTS = ['https://lostkawzlifestyle.herokuapp.com/']
+ALLOWED_HOSTS = ['lostkawzlifestyle.herokuapp.com, '127.0.0.1']
 
 SITE_ID = 1
 
