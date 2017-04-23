@@ -61,8 +61,8 @@ hashids==1.2.0
 html5lib==0.9999999
 isodate==0.5.4
 jsonfield==2.0.1
-libxml2-python==2.9.3
-lxml==3.7.2
+
+
 oauthlib==0.6.3
 olefile==0.44
 packaging==16.8
