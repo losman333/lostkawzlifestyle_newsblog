@@ -46,7 +46,7 @@ INSTALLED_APPS = [
     'menus',
     'treebeard',
    
-    
+    'storages',
     'django.contrib.sites',
     'djangocms_text_ckeditor',
     'djangocms_link',
@@ -145,6 +145,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'lostkawzlifestyle1.wsgi.application'
 
 
+
 # Database
 # https://docs.djangoproject.com/en/1.9/ref/settings/#databases
 DATABASES = {
@@ -213,19 +214,25 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "static/media")
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
-
+AWS_STORAGE_BUCKET_NAME = 'arn:aws:s3:::www.lknewsblog.com'
+AWS_ACCESS_KEY_ID = 'AKIAITPDCY63AKM7XVHQ'
+AWS_SECRET_ACCESS_KEY = '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'
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
+
+ # We also use it in the next setting.
+AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
 
 # The absolute path to the directory where collectstatic will collect static files for deployment.
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 # The URL to use when referring to static files (where they will be served from)
-STATIC_URL = '/static/'
+STATIC_URL = "https://%s/" % AWS_S3_CUSTOM_DOMAIN
 
+STATICFILES_LOCATION = 'staticfiles'
 # Simplified static file serving.
 # https://warehouse.python.org/project/whitenoise/
-STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
-
+STATICFILES_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
+ 
 db_from_env = dj_database_url.config(conn_max_age=500)
 DATABASES = { 'default': dj_database_url.config() }
