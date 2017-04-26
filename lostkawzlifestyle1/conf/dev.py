@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/1.9/ref/settings/
 """
 
 import os
-from decouple import config, Csv
+import dj_database_url
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -21,12 +21,15 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.9/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = config('SECRET_KEY')
+#SECRET_KEY = 'yz-fw!1!o!bl%4njsa!b-k50f_n+y+8g(+(^r(5yn7&^vlrp+r'
+
+SECRET_KEY = ('yz-fw!1!o!bl%4njsa!b-k50f_n+y+8g(+(^r(5yn7&^vlrp+r')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config('DEBUG', default=True, cast=bool)
+# DEBUG = True
+DEBUG = bool( os.environ.get('DJANGO_DEBUG', True) )
 
-ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
+ALLOWED_HOSTS = ['lostkawzlifestyle.herokuapp.com','127.0.0.1']
 
 SITE_ID = 1
 
@@ -142,21 +145,19 @@ TEMPLATES = [
 WSGI_APPLICATION = 'lostkawzlifestyle1.wsgi.application'
 
 
+
 # Database
 # https://docs.djangoproject.com/en/1.9/ref/settings/#databases
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': config('DB_NAME'),
-        'USER': config('DB_USER'),
-        'PASSWORD': config('DB_PASSWORD'),
-        'HOST': config('DB_HOST'),
-        'PORT': config('DB_PORT'),
+        'NAME': 'lostkawzlifestyle',
+        'USER': 'postgres',
+        'HOST': 'localhost',
+        'PORT': '8080',
+        'PASSWORD': 'batman123',
     }
 }
-
-ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
 
 
 # Password validation
@@ -204,14 +205,34 @@ USE_L10N = True
 
 USE_TZ = True
 
+# Heroku: Update database configuration from $DATABASE_URL.
+
+
+
 MEDIA_URL = "/static/media/"
 MEDIA_ROOT = os.path.join(BASE_DIR, "static/media")
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
+AWS_STORAGE_BUCKET_NAME = 'arn:aws:s3:::www.lknewsblog.com'
+AWS_ACCESS_KEY_ID = 'AKIAITPDCY63AKM7XVHQ'
+AWS_SECRET_ACCESS_KEY = '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'
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/1.10/howto/static-files/
 
-STATIC_URL = '/static/'
+ # We also use it in the next setting.
+AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
 
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "static"),
-]
+# The absolute path to the directory where collectstatic will collect static files for deployment.
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+# The URL to use when referring to static files (where they will be served from)
+STATIC_URL = "https://%s/" % AWS_S3_CUSTOM_DOMAIN
+
+STATICFILES_LOCATION = 'staticfiles'
+# Simplified static file serving.
+# https://warehouse.python.org/project/whitenoise/
+STATICFILES_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
+ 
+db_from_env = dj_database_url.config(conn_max_age=500)
+DATABASES = { 'default': dj_database_url.config() }
