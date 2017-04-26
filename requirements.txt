@@ -62,7 +62,7 @@ html5lib==0.9999999
 isodate==0.5.4
 jsonfield==2.0.1
 
-
+lxml==3.7.2
 oauthlib==0.6.3
 olefile==0.44
 packaging==16.8
@@ -74,6 +74,7 @@ psycopg2==2.7.1
 pyparsing==2.2.0
 pyrate==0.5a9
 python-dateutil==2.6.0
+python-decouple==3.0
 python-slugify==1.2.0
 pytz==2016.10
 requests==2.13.0
