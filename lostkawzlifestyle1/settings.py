@@ -231,16 +231,7 @@ STATICFILES_DIRS = [
 ]
 
 
-DATABASES = {
-    'default': {
-        'ENGINE': {'default':'django.db.backends.postgresql_psycopg2'},
-        'NAME': config('DB_NAME'),
-        'USER': config('DB_USER'),
-        'PASSWORD': config('DB_PASSWORD'),
-        'HOST': config('DB_HOST'),
-        'PORT': config('DB_PORT'),
-    }
-}
+
 
 db_from_env = dj_database_url.config(conn_max_age=500)
 DATABASES = { 'default': dj_database_url.config() }
