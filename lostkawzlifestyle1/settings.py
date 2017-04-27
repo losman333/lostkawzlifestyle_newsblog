@@ -14,6 +14,7 @@ import os
 from decouple import config, Csv
 import dj_database_url
 
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -29,9 +30,9 @@ DEBUG = config('DEBUG', default=True, cast=bool)
 
 ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
 
-AWS_STORAGE_BUCKET_NAME = config('BUCKET_NAME', ),
-AWS_ACCESS_KEY_ID = config('ACCESS_KEY_ID'),
-AWS_SECRET_ACCESS_KEY = config('AWS_SECRET_KEY'),
+AWS_STORAGE_BUCKET_NAME = config('BUCKET_NAME', 'default' ),
+AWS_ACCESS_KEY_ID = config('ACCESS_KEY_ID', 'default'),
+AWS_SECRET_ACCESS_KEY = config('AWS_SECRET_KEY', 'default'),
 
 # Tell django-storages that when coming up with the URL for an item in S3 storage, keep
     # it simple - just use this domain plus the path. (If this isn't set, things get complicated).
@@ -222,12 +223,13 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "static/media")
 STATICFILES_LOCATION = 'static'
 STATICFILES_STORAGE = 'custom_storages.StaticStorage'
 STATIC_URL = "https://%s/%s/" % (AWS_S3_CUSTOM_DOMAIN, STATICFILES_LOCATION)
-STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]
-import dj_database_url
+
+
+
 db_from_env = dj_database_url.config(conn_max_age=500)
 DATABASES = { 'default': dj_database_url.config() }
