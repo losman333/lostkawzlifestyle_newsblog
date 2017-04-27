@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/1.9/ref/settings/
 
 import os
 from decouple import config, Csv
+import dj_database_url
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -21,14 +22,14 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.9/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = config("SECRET_KEY"),
+SECRET_KEY = config('SECRET_KEY'),
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', default=True, cast=bool)
 
 ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
 
-AWS_STORAGE_BUCKET_NAME = config('BUCKET_NAME'),
+AWS_STORAGE_BUCKET_NAME = config('BUCKET_NAME', ),
 AWS_ACCESS_KEY_ID = config('ACCESS_KEY_ID'),
 AWS_SECRET_ACCESS_KEY = config('AWS_SECRET_KEY'),
 
@@ -221,12 +222,12 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "static/media")
 STATICFILES_LOCATION = 'static'
 STATICFILES_STORAGE = 'custom_storages.StaticStorage'
 STATIC_URL = "https://%s/%s/" % (AWS_S3_CUSTOM_DOMAIN, STATICFILES_LOCATION)
-
+STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]
-
+import dj_database_url
 db_from_env = dj_database_url.config(conn_max_age=500)
 DATABASES = { 'default': dj_database_url.config() }
