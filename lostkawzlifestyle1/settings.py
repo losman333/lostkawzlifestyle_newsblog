@@ -62,6 +62,7 @@ INSTALLED_APPS = [
     'cms',
     'menus',
     'treebeard',
+    
    
     'storages',
     'django.contrib.sites',
@@ -221,7 +222,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "static/media")
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 STATICFILES_LOCATION = 'static'
-STATICFILES_STORAGE = 'custom_storages.StaticStorage'
+STATICFILES_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
 STATIC_URL = "https://%s/%s/" % (AWS_S3_CUSTOM_DOMAIN, STATICFILES_LOCATION)
 STATIC_URL = '/static/'
 
@@ -230,6 +231,16 @@ STATICFILES_DIRS = [
 ]
 
 
+DATABASES = {
+    'default': {
+        'ENGINE': {'default':'django.db.backends.postgresql_psycopg2'},
+        'NAME': config('DB_NAME'),
+        'USER': config('DB_USER'),
+        'PASSWORD': config('DB_PASSWORD'),
+        'HOST': config('DB_HOST'),
+        'PORT': config('DB_PORT'),
+    }
+}
 
 db_from_env = dj_database_url.config(conn_max_age=500)
 DATABASES = { 'default': dj_database_url.config() }
