@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'menus',
     'treebeard',
    
-    
+    'storages',
     'django.contrib.sites',
     'djangocms_text_ckeditor',
     'djangocms_link',
@@ -198,17 +198,41 @@ TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
-USE_L10N = True
+USE_L10N = True 
 
 USE_TZ = True
 
-MEDIA_URL = "/static/media/"
-MEDIA_ROOT = os.path.join(BASE_DIR, "static/media")
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
+AWS_STORAGE_BUCKET_NAME = 'BUCKET_NAME'
+AWS_ACCESS_KEY_ID = 'AWS_SECRET_KEY'
+AWS_SECRET_ACCESS_KEY = 'ACCESS_KEY_ID'
+    
+AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
 
-STATIC_URL = '/static/'
+MEDIAFILES_LOCATION = 'media'
+MEDIA_URL = "https://%s/%s/" % (AWS_S3_CUSTOM_DOMAIN, MEDIAFILES_LOCATION)
+DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
+
+
+
+    
+
+
+STATIC_ROOT = 'lostkawzlifestyle1/staticfiles/'
+
+STATICFILES_LOCATION = 'static'
+STATICFILES_STORAGE = 'custom_storages.StaticStorage'
+
+STATIC_URL = "https://%s/%s/" % (AWS_S3_CUSTOM_DOMAIN, STATICFILES_LOCATION)
+
+
+
+
+
+
+
+
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
