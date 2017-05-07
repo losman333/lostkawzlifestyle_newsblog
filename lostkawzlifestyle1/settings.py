@@ -223,7 +223,7 @@ DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
 STATIC_ROOT = 'lostkawzlifestyle1/staticfiles/'
 
 STATICFILES_LOCATION = 'static'
-STATICFILES_STORAGE = 'custom_storages.StaticStorage'
+STATICFILES_STORAGE = ''whitenoise.django.GzipManifestStaticFilesStorage''
 
 STATIC_URL = "https://%s/%s/" % (AWS_CLOUDFRONT_DOMAIN, STATICFILES_LOCATION)
 
