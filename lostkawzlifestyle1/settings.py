@@ -215,6 +215,7 @@ AWS_HEADERS = {  # see http://developer.yahoo.com/performance/rules.html#expires
     }
 
 MEDIAFILES_LOCATION = 'media'
+MEDIA_ROOT = '/%s/' % MEDIAFILES_LOCATION
 MEDIA_URL = '//%s/%s/' % (AWS_CLOUDFRONT_DOMAIN, MEDIAFILES_LOCATION)
 DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
 
@@ -223,7 +224,7 @@ DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
     
 
 
-STATIC_ROOT = 'lostkawzlifestyle1/staticfiles/'
+STATIC_ROOT = '/%s/' % STATICFILES_LOCATION
 
 STATICFILES_LOCATION = 'static'
 STATICFILES_STORAGE = 'custom_storages.StaticStorage'
