@@ -206,8 +206,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 AWS_STORAGE_BUCKET_NAME = config('BUCKET_NAME')
 AWS_CLOUDFRONT_DOMAIN = config('CD_DOMAIN')
-AWS_ACCESS_KEY_ID = config('aws_access_key_id') 
-AWS_SECRET_ACCESS_KEY = 'AWS_SECRET_ACCESS_KEY'
+AWS_ACCESS_KEY_ID = config('AWS_ACCESS_KEY_ID') 
+AWS_SECRET_ACCESS_KEY = config('AWS_SECRET_ACCESS_KEY')
     
 AWS_HEADERS = {  # see http://developer.yahoo.com/performance/rules.html#expires
         'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
