@@ -66,6 +66,7 @@ INSTALLED_APPS = [
     'aldryn_common',
     'aldryn_newsblog',
     'aldryn_background_image',
+    'lostkawzlifestyle1',
     
     
     'aldryn_people',
