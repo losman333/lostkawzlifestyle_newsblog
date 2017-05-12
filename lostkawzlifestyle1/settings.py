@@ -238,9 +238,9 @@ STATIC_URL = "https://%s/%s/" % (AWS_CLOUDFRONT_DOMAIN, STATICFILES_LOCATION)
 
 
 
-STATICFILES_DIRS = (
-    path.join(BASE_DIR, 'static'),  # Important for Heroku
-)
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"),
+]
 
 
 import dj_database_url
