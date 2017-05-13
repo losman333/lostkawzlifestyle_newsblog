@@ -232,7 +232,7 @@ STATIC_ROOT = 'lostkawzlifestyle1/staticfiles/'
 STATICFILES_LOCATION = 'static'
 
 
-STATIC_URL = "https://%s/%s/" % (AWS_CLOUDFRONT_DOMAIN, STATICFILES_LOCATION)
+STATIC_URL = "https://%s/%s/" % (AWS_S3_CUSTOM_DOMAIN, STATICFILES_LOCATION)
 
 
 STATICFILES_STORAGE = 'custom_storages.StaticStorage'
