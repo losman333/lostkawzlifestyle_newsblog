@@ -12,13 +12,13 @@
 
   .top-bar-left {
     width: 100%;
-    padding-top: 100px;
+    padding-top: 5%;
     padding-right: 86px; }
     .top-bar-left ul {
    		
-     padding-left: 12%; 
+     left: 45%; 
      width: 100%;
-     position:fixed;
+     position:relative;
     
      } }
       
@@ -91,12 +91,12 @@
       
 @media only screen and (min-width: 40rem) {
   .logo-wrapper {
-    position: relative; }
+    position: fixed; }
     .logo-wrapper .logo {
       width: 255px;
       height: 100px;
       position: fixed;
-      left: 40%;
+      left: 1%;
       right: 60%;
       top: -58x;
       margin-left: -9px; }
@@ -179,12 +179,12 @@ font-family: 'Anton', sans-serif;
   display: none; }
     
     .aw {
-  color: #ffffff;
+  color: #000000;
   text-decoration: none;
   line-height: inherit;
   cursor: pointer; }
   a:hover, a:focus {
-    color: #ffffff; }
+    color: #0f0f0a; }
     
  #background-image {
 	width: 100%;
