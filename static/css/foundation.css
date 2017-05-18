@@ -381,7 +381,7 @@ body {
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   line-height: 1.5;
-  color: #ffffff;
+  color: #000000;
   background: #ffffff;
   
   -webkit-font-smoothing: antialiased;
@@ -2081,7 +2081,7 @@ select {
       outline: 0; }
   .menu > li > a {
     display: block;
-    padding: 0.7rem 1.5rem;
+    padding: 0.7rem .8rem;
     line-height: 1; }
   .menu input,
   .menu a,
