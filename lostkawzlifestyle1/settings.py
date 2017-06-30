@@ -181,7 +181,7 @@ AUTH_PASSWORD_VALIDATORS = [
 CMS_TEMPLATES = [
     ('base.html', 'base'),
     ('content.html', 'content page template'),
-     ('gallery.html', 'gallery page template'),
+     ('gallery.html', 'gallery '),
     
 ]
 
