@@ -13,7 +13,7 @@
 <li class="orbit-slide">
 							<header class="header" style="background-image: url(
 {% if article.featured_image_id %}
-    {% thumbnail article.featured_image 1200x450 crop subject_location=article.featured_image.subject_location %}
+   <a class="aw1 a5w"  href="{% namespace_url 'article-detail' article.slug namespace=namespace default='' %}"> {% thumbnail article.featured_image 1200x450 crop subject_location=article.featured_image.subject_location %}</a>
 {% else %}
     {% static 'img/post-bg.jpg' %}
 {% endif %}
