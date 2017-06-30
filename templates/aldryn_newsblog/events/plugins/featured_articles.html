@@ -3,6 +3,7 @@
 {% load i18n %}
  
 		<div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+		  <a class="aw1 a5w"  href="{% namespace_url 'article-detail' article.slug namespace=namespace default='' %}">
 		  <ul class="orbit-container">
             <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
     <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
@@ -14,7 +15,7 @@
 							<header class="header" style="background-image: url(
 {% if article.featured_image_id %}
     {% thumbnail article.featured_image 1200x450 crop subject_location=article.featured_image.subject_location %}
-{% else %}
+{% else %} 
     {% static 'img/post-bg.jpg' %}
 {% endif %}
 )">	
@@ -35,7 +36,7 @@
 
 			
   </ul>
- 
+ </a>
  
  
 
