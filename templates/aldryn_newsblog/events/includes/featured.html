@@ -1,9 +1,9 @@
  {% load i18n staticfiles thumbnail cms_tags apphooks_config_tags %}
 {% load i18n cms_tags apphooks_config_tags %}
 <div class="row">
-<article class="article
+
     {% if article.is_featured %} featured{% endif %}
-    {% if not article.published %} unpublished{% endif %}">
+    {% if not article.published %} unpublished{% endif %}
 	
         {% if not detail_view %}
         
@@ -53,5 +53,5 @@
 		</div>
         
     {% endif %}
-</article>
+
 </div>
