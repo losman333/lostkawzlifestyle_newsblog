@@ -13,16 +13,15 @@
 <li class="orbit-slide">
 							<header class="header" style="background-image: url(
 {% if article.featured_image_id %}
-    {% thumbnail article.featured_image 1200x450 crop subject_location=article.featured_image.subject_location %}
 {% else %}
     {% static 'img/post-bg.jpg' %}
 {% endif %}
 )">	
 						
-						<span class="orbit-caption ">
+						
 		   	 			{% include "aldryn_newsblog/events/includes/featured.html" with namespace=instance.app_config.namespace%}
 		   	 			
-						</span>
+						
 						
 
 	
