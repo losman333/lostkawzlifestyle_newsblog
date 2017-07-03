@@ -8,19 +8,16 @@
 {% block newsblog_content %}
 
 <div class="row">
-<div class="large-10 large-centered medium-centered columns">
+<div class="large-12 large-centered medium-centered columns">
 	
 <div class="row">
 	<br>
-	<div class="large-12 large-centered columns">
+	<div class="large-10 large-centered columns">
 {% placeholder "main" or %}
         {% endplaceholder %}
-        </div>
-  </div>
+        
 	  
-		<div class="row">
-	<div class="large-12  medium-8 small-12 columns">
-	
+		
       
 	  
     {% for article in article_list %}
@@ -40,8 +37,7 @@
 				
           
  
-   </div>
-     </div>
+  
       
     
         	
@@ -56,7 +52,8 @@
   
   </div>
 </div>
-
+</div>
+</div>
 {% endblock %}
 
 
