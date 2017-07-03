@@ -8,12 +8,12 @@
 	
         {% if not detail_view %}
         
-        <div class="large-4 medium-3 small-2 columns">
+        <div class="large-4 medium-3 small-4 columns">
 
-	<p> <img src="{% thumbnail article.featured_image 250x250 crop subject_location=article.featured_image.subject_location %}" alt="{{ article.featured_image.alt }}"></p>
+	<p> <img src="{% thumbnail article.featured_image 150x150 crop subject_location=article.featured_image.subject_location %}" alt="{{ article.featured_image.alt }}"></p>
 </div>
 				
-       	<div class="large-8 medium-9 small-10  columns" >
+       	<div class="large-8 medium-9 small-8 columns" >
            <h4>
             <a href="{% namespace_url 'article-detail' article.slug namespace=namespace default='' %}">{% render_model article "title" %}
             	
