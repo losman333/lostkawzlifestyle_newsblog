@@ -1,0 +1,84 @@
+{% load i18n staticfiles thumbnail cms_tags apphooks_config_tags %}
+{% load i18n cms_tags apphooks_config_tags %}
+
+<article class="article
+    {% if article.is_featured %} featured{% endif %}
+    {% if not article.published %} unpublished{% endif %}">
+    <div class="row">
+            	
+                <div class="large-8 columns">
+                	
+    <h1>{% render_model article "title" "" "" "striptags" %}</h1>
+    <h3 >{% render_model article "lead_in" "" "" "truncatewords:'10'|striptags" %}</h3>
+
+    <span class="meta">
+        by
+        <a href="{% namespace_url 'article-detail' article.slug namespace=namespace default='' %}">
+            {{ article.author.name }}
+        </a>
+        on {{ article.publishing_date|date:"F n, Y" }}
+    </span>
+          <p> <img src="{% thumbnail article.featured_image 960x593 crop subject_location=article.featured_image.subject_location %}" alt="{{ article.featured_image.alt }}"></p>
+
+</div>
+                </div>
+            </div>
+        </div>
+	
+        {% if not detail_view %}
+        
+        
+
+
+				
+       	
+          
+        {% else %}
+           
+        {% endif %}
+    </h5>
+    {# The image is only shown on the detail view by using the condition "and detail_view" #}
+
+
+    {% if article.categories.exists %}
+        <p>
+            {% for category in article.categories.all %}
+                <a href="{% namespace_url 'article-list-by-category' category.slug namespace=namespace default='' %}">{{ category.name }}</a>
+                {% if not forloop.last %}, {% endif %}
+            {% endfor %}
+        </p>
+    {% endif %}
+
+
+    
+
+  
+
+    {% if article.tags %}
+        <p>
+            {% for tag in article.tags.all %}
+                <a href="{% namespace_url 'article-list-by-tag' tag=tag.slug namespace=namespace default='' %}">{{ tag.name }}</a>
+            {% endfor %}
+        </p>
+    {% endif %}
+
+    
+
+    {% if detail_view %}
+    <br>
+      <div class="row">
+  			 <div class="large-12 columns">
+  
+  			<div class="large-8 columns ">
+        {% render_placeholder article.content language placeholder_language %}
+      	</div>
+      			<div class="large-3 columns ">
+  					{% static_placeholder 'newsblog_base_sidebar' %}
+				</div>
+		
+		</div>
+		
+		</div>
+        
+    {% endif %}
+</article>

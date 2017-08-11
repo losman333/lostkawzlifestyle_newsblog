@@ -1,0 +1,49 @@
+{% extends "aldryn_newsblog/base.html" %}
+{% load i18n  staticfiles thumbnail cms_tags apphooks_config_tags %}
+
+	
+	
+	
+
+
+{% block newsblog_content %}
+<br>
+<br>
+<div class="row large-collapsed">
+
+<div class="large-10 large-centered">
+
+		
+			
+	 {% for article in article_list %}
+    
+    	<div class="large-6 columns">
+    		
+
+    			
+
+             {% include "aldryn_newsblog/gallery/includes/list_gallery.html" %} 
+				  {% empty %}
+  
+   </div>
+{% endfor %}  
+
+
+{% include "aldryn_newsblog/includes/pagination.html" %}
+</div>
+
+
+        	
+</div>
+
+  
+  </div> 
+
+{% endblock %}
+
+
+
+    
+
+
+	
