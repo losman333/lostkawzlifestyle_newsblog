@@ -11,7 +11,8 @@
 
 {% for article in articles_list %}
 <li class="orbit-slide">
-							<header class="header" style="background-image: url(
+<header class="header" style="background-image: url( {% thumbnail article.featured_image 650x400 crop subject_location=article.featured_image.subject_location %}" alt="{{ article.featured_image.alt }}"> 
+
 {% if article.featured_image_id %}
 {% else %}
     {% static 'img/post-bg.jpg' %}
