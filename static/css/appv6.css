@@ -157,7 +157,7 @@ font-family: 'Anton', sans-serif;
   float: right;
   top: 0;
   left: 0;
-  width: 32.33%;
+  width: 100.33%;
   height: 100%;
   background-color: rgba(0.3, 0.3, 0.3, 0.3); }
 
@@ -191,13 +191,14 @@ font-family: 'Anton', sans-serif;
   color: #ffffff;
   text-decoration: none;
   line-height: inherit;
-  text-shadow: 2px 2px #000;
+  text-shadow: 10px 10px #000;
   cursor: pointer; }
   a:hover, a:focus {
     color: #eeeedd; }
     
  #background-image {
 	width: 100%;
+	opacity: 0.5;
 	
  }
  

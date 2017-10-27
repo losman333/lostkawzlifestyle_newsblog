@@ -1,59 +1,111 @@
-	{% load staticfiles i18n cms_tags menu_tags sekizai_tags %}
-{% load i18n staticfiles thumbnail cms_tags apphooks_config_tags %}
+<nav class="top-bar">
+  <ul class="title-area">
+    <!-- Title Area -->
+    <li class="name">
+      <h1><a href="#">Top Bar Title </a></h1>
+    </li>
+    <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+  </ul>
 
-{% load cms_tags %}
-<!doctype html>
-<html class="no-js" lang="{{ LANGUAGE_CODE }}" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}{% page_attribute page_title %} - {{ request.site.name }}{% endblock title %}</title>
-    <link rel="stylesheet"  href="{% static 'css/foundation3.css' %}">
-    <link rel="stylesheet" href="{% static 'css/appv6.css' %}">
-    <link rel="stylesheet" href="{% static 'css/component.css' %}">
-    <script src="{% static 'js/modernizr.custom.js' %}"></script>
-   
-    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
-    {% render_block "css" %}
-    {{ ALDRYN_SNAKE.render_head }}
-</head>
-{% cms_toolbar %}
+  <section class="top-bar-section">
+    <!-- Left Nav Section -->
+    <ul class="left">
+      <li class="divider"></li>
+      <li class="active"><a href="#">Main Item 1</a></li>
+      <li class="divider"></li>
+      <li><a href="#">Main Item 2</a></li>
+      <li class="divider"></li>
+      <li class="has-dropdown"><a href="#">Main Item 3</a>
 
-			
-      {% show_menu 0 0 100 100 "menu.html"%}
-        	
-            
-      
- 
-  
+        <ul class="dropdown">
+          <li class="has-dropdown"><a href="#">Dropdown Level 1a</a>
 
+            <ul class="dropdown">
+              <li><label>Dropdown Level 2 Label</label></li>
+              <li><a href="#">Dropdown Level 2a</a></li>
+              <li><a href="#">Dropdown Level 2b</a></li>
+              <li class="has-dropdown"><a href="#">Dropdown Level 2c</a>
 
-<div id="pageContent">
-    {% block content %}
-      <p>Hello world! This is the Foundation 6 Boilerplate.</p>
-    {% endblock %}
-  </div>
+                <ul class="dropdown">
+                  <li><label>Dropdown Level 3 Label</label></li>
+                  <li><a href="#">Dropdown Level 3a</a></li>
+                  <li><a href="#">Dropdown Level 3b</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Dropdown Level 3c</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown Level 2d</a></li>
+              <li><a href="#">Dropdown Level 2e</a></li>
+              <li><a href="#">Dropdown Level 2f</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Dropdown Level 1b</a></li>
+          <li><a href="#">Dropdown Level 1c</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Dropdown Level 1d</a></li>
+          <li><a href="#">Dropdown Level 1e</a></li>
+          <li><a href="#">Dropdown Level 1f</a></li>
+          <li class="divider"></li>
+          <li><a href="#">See all &rarr;</a></li>
+        </ul>
+      </li>
+      <li class="divider"></li>
+    </ul>
 
-    <script src="{% static 'js/vendor/jquery.js' %}"></script>
-    <script src="{% static 'js/vendor/what-input.js' %}"></script>
-    <script src="{% static 'js/vendor/foundation.js' %}"></script>
-    
-    <script src="{% static 'js/app.js' %}"></script>
-    <script src="{% static 'js/imagesloaded.pkgd.min.js' %}"></script>
-    <script src="{% static 'js/masonry.pkgd.min.js' %}"></script>
-    <script src="{% static 'js/classie.js' %}"></script>
-    <script src="{% static 'js/cbpGridGallery.js' %}"></script>
-    <script>
-			new CBPGridGallery( document.getElementById( 'grid-gallery' ) );
-		</script>
-    {% render_block "js" %}
-    {{ ALDRYN_SNAKE.render_tail }}
-    
-   
+    <!-- Right Nav Section -->
+    <ul class="right">
+      <li class="divider hide-for-small"></li>
+      <li class="has-dropdown"><a href="#">Main Item 4</a>
 
+        <ul class="dropdown">
+          <li><label>Dropdown Level 1 Label</label></li>
+          <li class="has-dropdown"><a href="#" class="">Dropdown Level 1a</a>
 
+            <ul class="dropdown">
+              <li><a href="#">Dropdown Level 2a</a></li>
+              <li><a href="#">Dropdown Level 2b</a></li>
+              <li class="has-dropdown"><a href="#">Dropdown Level 2c</a>
 
-  {% static_placeholder "footer" %}
-
-</html>
+                <ul class="dropdown">
+                  <li><a href="#">Dropdown Level 3a</a></li>
+                  <li><a href="#">Dropdown Level 3b</a></li>
+                  <li><a href="#">Dropdown Level 3c</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown Level 2d</a></li>
+              <li><a href="#">Dropdown Level 2e</a></li>
+              <li><a href="#">Dropdown Level 2f</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Dropdown Level 1b</a></li>
+          <li><a href="#">Dropdown Level 1c</a></li>
+          <li class="divider"></li>
+          <li><label>Dropdown Level 1 Label</label></li>
+          <li><a href="#">Dropdown Level 1d</a></li>
+          <li><a href="#">Dropdown Level 1e</a></li>
+          <li><a href="#">Dropdown Level 1f</a></li>
+          <li class="divider"></li>
+          <li><a href="#">See all &rarr;</a></li>
+        </ul>
+      </li>
+      <li class="divider"></li>
+      <li class="has-form">
+        <form>
+          <div class="row collapse">
+            <div class="small-8 columns">
+              <input type="text">
+            </div>
+            <div class="small-4 columns">
+              <a href="#" class="alert button">Search</a>
+            </div>
+          </div>
+        </form>
+      </li>
+      <li class="divider show-for-small"></li>
+      <li class="has-form">
+        <a class="button" href="#">Button!</a>
+      </li>
+    </ul>
+  </section>
+</nav>
