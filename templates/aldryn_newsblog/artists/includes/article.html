@@ -6,7 +6,8 @@
     {% if article.is_featured %} featured{% endif %}
     {% if not article.published %} unpublished{% endif %}">
     
-            	
+            	<br>
+            	<br>
                 <div class="large-10 large-centered columns">
                 	<h1>{% render_model article "title" "" "" "striptags" %}</h1>
     <h3 >{% render_model article "lead_in" "" "" "truncatewords:'10'|striptags" %}</h3>
@@ -44,7 +45,7 @@
 
   
 
-    
+    <hr>
 <div class="large-6 columns">
     {% if detail_view %}
    
