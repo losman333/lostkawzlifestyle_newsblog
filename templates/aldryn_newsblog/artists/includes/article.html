@@ -6,8 +6,10 @@
     {% if not article.published %} unpublished{% endif %}">
     <div class="row">
             	
-                <div class="large-8 columns">
+                <div class="large-10 large-centered columns">
                 	
+                	<div class="large-5 columns">
+					              	
     <h1>{% render_model article "title" "" "" "striptags" %}</h1>
     <h3 >{% render_model article "lead_in" "" "" "truncatewords:'10'|striptags" %}</h3>
 
@@ -20,9 +22,9 @@
     </span>
           <p> <img src="{% thumbnail article.featured_image 960x593 crop subject_location=article.featured_image.subject_location %}" alt="{{ article.featured_image.alt }}"></p>
 
-</div>
+
                 </div>
-            </div>
+          
         </div>
 	
         {% if not detail_view %}
@@ -63,22 +65,17 @@
     {% endif %}
 
     
-
+<div class="large-5 columns">
     {% if detail_view %}
-    <br>
-      <div class="row">
-  			 <div class="large-12 columns">
-  
-  			<div class="large-8 columns ">
+   
+     
         {% render_placeholder article.content language placeholder_language %}
-      	</div>
-      			<div class="large-3 columns ">
-  					{% static_placeholder 'newsblog_base_sidebar' %}
-				</div>
+      
 		
-		</div>
 		
-		</div>
         
     {% endif %}
+      </div>
+     
+    </div>
 </article>
