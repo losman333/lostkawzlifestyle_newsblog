@@ -5,40 +5,25 @@
 	
 	
 
-<div class="row">
-	
-<div class="large-8 large-centered columns">
+
 {% block newsblog_content %}
-<br>
-<br>
-
-
 
 		
 			
 	 {% for article in article_list %}
     
-    	<div class="large-4 columns">
-    		
-
+    
     			
 
-             {% include "aldryn_newsblog/artists/includes/list_gallery.html" %} 
+             {% include "aldryn_newsblog/gallery/includes/list_gallery.html" %} 
 				  {% empty %}
   
-   </div>
+
 {% endfor %}  
 
 
-
-</div>
-
 {% include "aldryn_newsblog/includes/pagination.html" %}
-        	
-</div>
 
-  
- 
 
 {% endblock %}
 
