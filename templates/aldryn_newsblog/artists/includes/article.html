@@ -6,7 +6,7 @@
     {% if not article.published %} unpublished{% endif %}">
     <div class="row">
             	
-                <div class="large-8 columns">
+                <div class="large-8 large-centerd columns">
                 	
     <h1>{% render_model article "title" "" "" "striptags" %}</h1>
     <h3 >{% render_model article "lead_in" "" "" "truncatewords:'10'|striptags" %}</h3>
@@ -59,19 +59,9 @@
 
     {% if detail_view %}
     <br>
-      <div class="row">
-  			 <div class="large-12 columns">
-  
-  			<div class="large-8 columns ">
+      
         {% render_placeholder article.content language placeholder_language %}
-      	</div>
-      			<div class="large-3 columns ">
-  					{% static_placeholder 'newsblog_base_sidebar' %}
-				</div>
-		
-		</div>
-		
-		</div>
+      	
         
     {% endif %}
     </div>
