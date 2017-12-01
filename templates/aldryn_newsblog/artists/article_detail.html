@@ -1,17 +1,20 @@
 {% extends "aldryn_newsblog/base.html" %}
 {% load i18n staticfiles thumbnail cms_tags apphooks_config_tags %}
+<div class="row">
+	<div class="8 large-columns">
+		<div class="large-4 columns">
 {% block title %}
     {{ article.title }} - {{ block.super }}
 {% endblock %}
-
+	</div>
 	
 {% block newsblog_content %}
 
- 
+ <div class="large-4 columns">
   				
   			        {% include "aldryn_newsblog/artists/includes/article.html" with detail_view="true" %}
 		
-		
+	</div>	
 
  
 	{% render_placeholder view.config.placeholder_detail_bottom %}
@@ -20,4 +23,5 @@
 
   
 {% endblock %}
- 
+</div>
+ </div>

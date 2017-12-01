@@ -4,10 +4,7 @@
 <article class="article
     {% if article.is_featured %} featured{% endif %}
     {% if not article.published %} unpublished{% endif %}">
-    <div class="row">
-            	
-                <div class="large-8 large-centerd columns">
-                	<div class="large-4 columns">
+    
                 	
     <h1>{% render_model article "title" "" "" "striptags" %}</h1>
     <h3 >{% render_model article "lead_in" "" "" "truncatewords:'10'|striptags" %}</h3>
@@ -56,9 +53,7 @@
         </p>
     {% endif %}
 
-    
-	<div class="large-4 columns">
-	
+  
     {% if detail_view %}
     <br>
       
@@ -66,7 +61,5 @@
       	
         
     {% endif %}
-    </div>
-    </div>
-    </div>
+   
 </article>
