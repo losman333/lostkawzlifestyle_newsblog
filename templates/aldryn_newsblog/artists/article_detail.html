@@ -1,6 +1,7 @@
 {% extends "aldryn_newsblog/base.html" %}
 {% load i18n staticfiles thumbnail cms_tags apphooks_config_tags %}
-
+<div class="row">
+	<div class="large-10 columns">
 {% block title %}
     {{ article.title }} - {{ block.super }}
 {% endblock %}
@@ -21,3 +22,5 @@
 
   
 {% endblock %}
+</div>
+</div>
