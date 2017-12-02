@@ -11,7 +11,7 @@
 
 {% for article in articles_list %}
 <li class="orbit-slide">
-{% thumbnail article.featured_image 1200x350 crop subject_location=article.featured_image.subject_location %}" alt="{{ article.featured_image.alt }}"> 
+<img src="{% thumbnail article.featured_image 1200x350 crop subject_location=article.featured_image.subject_location %}" alt="{{ article.featured_image.alt }}"> 
 
 {% if article.featured_image_id %}
 {% else %}
