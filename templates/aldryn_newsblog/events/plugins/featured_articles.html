@@ -11,9 +11,7 @@
 
 {% for article in articles_list %}
 <li class="orbit-slide">
-	<div  class"large-12 columns">
-<img src="{% thumbnail article.featured_image 1200x450 crop subject_location=article.featured_image.subject_location %}" alt="{{ article.featured_image.alt }}"> 
-</div>
+
 {% if article.featured_image_id %}
 {% else %}
     {% static 'img/post-bg.jpg' %}
@@ -22,7 +20,16 @@
 <br>
 <br>
 
+						<div class="row">
+							<div class="large-12 columns">
+						<div class="large-4 medium-6 small-12 large-offset-8 medium-offset-6 columns">
+		   	 			{% include "aldryn_newsblog/events/includes/featured.html" with namespace=instance.app_config.namespace%}
+		   	 			</div>
+						</div>
 						
+
+	
+
 	</li>
 	
 {% empty %}
@@ -32,6 +39,6 @@
 			
   </ul>
  
- </div>
+ 
  
 
