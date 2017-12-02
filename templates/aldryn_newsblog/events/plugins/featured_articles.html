@@ -11,6 +11,7 @@
 
 {% for article in articles_list %}
 <li class="orbit-slide">
+		   	 			{% include "aldryn_newsblog/events/includes/featured.html" with namespace=instance.app_config.namespace%}
 
 {% if article.featured_image_id %}
 {% else %}
@@ -21,7 +22,6 @@
 <br>
 
 						
-		   	 			{% include "aldryn_newsblog/events/includes/featured.html" with namespace=instance.app_config.namespace%}
 		   	 			
 						
 
