@@ -9,7 +9,7 @@
 
 {% for article in articles_list %}
 <li>
-<img src="{% thumbnail article.featured_image 1200x900 crop subject_location=article.featured_image.subject_location %}" alt="{{ article.featured_image.alt }}"> 
+<img src="{% thumbnail article.featured_image 1200x450 crop subject_location=article.featured_image.subject_location %}" alt="{{ article.featured_image.alt }}"> 
 
 {% if article.featured_image_id %}
 {% else %}
