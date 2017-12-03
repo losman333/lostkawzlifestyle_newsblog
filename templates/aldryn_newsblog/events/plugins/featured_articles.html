@@ -20,13 +20,9 @@
 <br>
 <br>
 
-						    {% include "aldryn_newsblog/events/includes/featured.html" %} 
-				  {% empty %}
 						
-
-	
-
-	</li>
+		   	 			{% include "aldryn_newsblog/events/includes/featured.html" with namespace=instance.app_config.namespace%}
+		   	 			
 	
 {% empty %}
     <p>{% trans "No items available" %}</p>
