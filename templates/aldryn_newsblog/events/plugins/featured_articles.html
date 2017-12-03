@@ -11,8 +11,6 @@
 
 {% for article in articles_list %}
 <li class="orbit-slide">
-< <a class="aw1" href="{% namespace_url 'article-detail' article.slug namespace=namespace default='' %}">
-img src="{% thumbnail article.featured_image 1200x450 crop subject_location=article.featured_image.subject_location %}" alt="{{ article.featured_image.alt }}" </a>> 
 
 {% if article.featured_image_id %}
 {% else %}
