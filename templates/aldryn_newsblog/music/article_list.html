@@ -1,0 +1,56 @@
+{% extends "aldryn_newsblog/base.html" %}
+{% load i18n  staticfiles thumbnail cms_tags apphooks_config_tags %}
+
+	
+	
+	
+
+{% block newsblog_content %}
+
+<br>
+<br>
+<div class="row">
+<div class="large-12 columns">
+<div class="large-10 large-centered">
+
+		<div class="large-8 columns">
+		<h4>Music</h4>
+		<hr>
+	 {% for article in article_list %}
+    
+    	
+    		
+		{% include "aldryn_newsblog/includes/list.html" %}
+				  {% empty %}
+    			
+
+            
+  
+   
+{% endfor %}  
+
+
+{% include "aldryn_newsblog/includes/pagination.html" %}
+</div>
+
+<div class="large-4 columns">				
+{% placeholder "sidebar" or %}
+        {% endplaceholder %}
+
+      
+  </div>
+        	
+</div>
+</div>
+  
+  </div> 
+ 
+{% endblock %}
+
+
+
+
+    
+
+
+	

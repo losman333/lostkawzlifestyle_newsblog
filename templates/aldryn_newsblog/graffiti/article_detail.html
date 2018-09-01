@@ -1,0 +1,27 @@
+{% extends "aldryn_newsblog/base.html" %}
+{% load i18n staticfiles thumbnail cms_tags apphooks_config_tags %}
+{% block title %}
+    {{ article.title }} - {{ block.super }}
+{% endblock %}
+
+	
+{% block newsblog_content %}
+
+<div class="grid-x">
+  
+
+ 				<div class="cell large-4">
+  				
+  			        {% include "aldryn_newsblog/graffiti/includes/article.html" with detail_view="true" %}
+		
+				</div>
+
+
+	{% render_placeholder view.config.placeholder_detail_bottom %}
+
+    {% static_placeholder "newsblog_social" %}
+
+    
+
+{% endblock %}
+ 

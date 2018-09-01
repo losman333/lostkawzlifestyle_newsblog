@@ -1,0 +1,26 @@
+{% load i18n staticfiles thumbnail cms_tags apphooks_config_tags %}
+
+{% load i18n %}
+ 
+		    
+
+<div class="row large-collapsed">
+{% for article in articles_list %}
+
+
+
+						
+						<div class="large-12 columns">
+		   	 			{% include "aldryn_newsblog/graffiti/includes/featured.html" with namespace=instance.app_config.namespace%}
+		   	 			</div>
+						
+	
+{% empty %}
+    <p>{% trans "No items available" %}</p>
+{% endfor %}
+</div>
+			
+  
+ 
+ 
+

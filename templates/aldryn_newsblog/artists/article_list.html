@@ -1,0 +1,46 @@
+{% extends "aldryn_newsblog/base.html" %}
+{% load i18n  staticfiles thumbnail cms_tags apphooks_config_tags %}
+
+	
+	
+	
+
+{% block newsblog_content %}
+
+<br>
+<br>
+
+<hr>
+	<div class="grid-container">
+		
+		
+	 {% for article in article_list %}
+    
+    
+	
+	
+    		
+		{% include "aldryn_newsblog/artists/includes/article_list.html" %}
+				  {% empty %}
+   
+{% endfor %}  
+
+{% include "aldryn_newsblog/includes/pagination.html" %}
+			
+{% render_placeholder view.config.placeholder_base_sidebar %}
+
+      
+
+        	
+
+
+  
+
+</div>
+</div>
+{% endblock %}
+
+    
+
+
+	

@@ -1,0 +1,42 @@
+{% extends "aldryn_newsblog/base.html" %}
+{% load i18n  staticfiles thumbnail cms_tags apphooks_config_tags %}
+
+	
+	
+	
+	
+
+	
+	 
+    {% for article in article_list %}
+    
+    	
+    		
+    			
+
+             {% include "aldryn_newsblog/includes/list_gallery.html" %}
+				  {% empty %}
+    
+    <br>
+{% endfor %}  
+
+
+{% include "aldryn_newsblog/includes/pagination.html" %}
+				
+            
+ 
+      
+    
+        	
+
+  
+  
+ 
+{% endblock %}
+
+
+
+    
+
+
+	

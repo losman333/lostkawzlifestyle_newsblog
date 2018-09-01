@@ -1,0 +1,169 @@
+{% load staticfiles i18n cms_tags menu_tags sekizai_tags %}
+{% load i18n staticfiles thumbnail cms_tags apphooks_config_tags %}
+
+{% load cms_tags %}
+<!doctype html>
+<html class="no-js" lang="{{ LANGUAGE_CODE }}" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% page_attribute page_title %} - {{ request.site.name }}{% endblock title %}</title>
+    <link rel="stylesheet" href="{% static 'css/foundation.css' %}">
+   	<link rel="stylesheet" href="{% static 'css/app.css' %}">
+   	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   	<script src="{% static 'js/vendor/jquery.js' %}"></script>
+	<script src="{% static 'js/vendor/what-input.js' %}"></script>
+    
+    <script src="{% static 'js/modernizr.custom.js' %}"></script>
+   
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    {% render_block "css" %}
+    {{ ALDRYN_SNAKE.render_head }}
+</head>
+{% cms_toolbar %}
+<body>
+
+<div class="off-canvas position-left " id="offCanvas"   data-off-canvas> 
+
+	<br>
+	<div class="grid-container">
+    {% show_menu 0 100 100 100   %}
+    </div>
+    <br>
+    <footer class="">
+	<div class="grid-container">
+  <div class="grid-x grid-margin-x  ">
+ 
+   
+    <div class=" cell large-4">
+      <p class="marketing-site-footer-title">Subscribe for the lateset Updates</h4\>
+     
+       <br>
+       
+     {% static_placeholder "subscribe" %}
+     
+        
+     
+    </div>
+  </div>
+    </div>
+  <div class="marketing-site-footer-bottom">
+  	<div class="grid-container">
+  		<div class="grid-x">
+   
+      
+      
+   
+      </div>
+  </div>
+  
+  </div>
+</footer>
+    
+
+    <!-- Menu -->
+</div>
+        
+
+
+ <div class="off-canvas-content" data-off-canvas-content>  
+         	{% show_menu 0 100 100 100 "menu.html" %}   
+             
+            {% block content %}
+            
+            {% endblock content %}
+      	
+   </div>    	
+    	
+            
+      
+ 
+  
+
+
+
+
+    
+    <script src="{% static 'js/vendor/foundation.js' %}"></script>
+    
+    <script src="{% static 'js/app.js' %}"></script>
+    <script src="{% static 'js/imagesloaded.pkgd.min.js' %}"></script>
+    <script src="{% static 'js/masonry.pkgd.min.js' %}"></script>
+    <script src="{% static 'js/classie.js' %}"></script>
+    <script src="{% static 'js/cbpGridGallery.js' %}"></script>
+    <script>
+			new CBPGridGallery( document.getElementById( 'grid-gallery' ) );
+		</script>
+    {% render_block "js" %}
+    {{ ALDRYN_SNAKE.render_tail }}
+    
+   
+<footer class="marketing-site-footer">
+	<div class="grid-container">
+  <div class="grid-x grid-margin-x  ">
+ 
+    <div class=" cell large-8 ">
+    	
+       <h4>Connect</h4>
+<div class="clearfix"></div>
+<button type="button" class="button social facebook">
+  <i class="fa fa-facebook" aria-hidden="true"></i> Facebook 
+</button>
+<button type="button" class="button social twitter">
+  <i class="fa fa-twitter" aria-hidden="true"></i> Twitter 
+</button>
+
+<button type="button" class="button social youtube">
+  <i class="fa fa-youtube" aria-hidden="true"></i> Youtube 
+</button>  
+<button type="button" class="button social instagram">
+  <i class="fa fa-instagram" aria-hidden="true"></i> Instagram 
+</button>
+
+
+
+
+    </div>
+    <div class=" cell large-4">
+      <h4>Sign Up</h4>
+     
+       
+       
+     {% static_placeholder "subscribe" %}
+     
+        
+     
+    </div>
+  </div>
+    </div>
+  <div class="marketing-site-footer-bottom">
+  	<div class="grid-container">
+  		<div class="grid-x">
+   
+      <div class="cell large-6">
+        <p>&copy; 2017 No rights reserved</p>
+      </div>
+      
+      <div class="cell large-6">
+        <ul class="menu marketing-site-footer-bottom-links">
+          <li><a href="http://127.0.0.1:8000">Home</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Artists</a></li>
+          <li><a href="#">Gallery</a></li>
+          
+        </ul>
+      </div>
+      </div>
+  </div>
+  
+  </div>
+</footer>
+
+
+</body>
+
+
+  {% static_placeholder "footer" %}
+
+</html>

@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% load cms_tags %}
+
+
+
+{% block content %}
+<br>
+  <div class="grid-container">
+   <div class="cell"> 
+<br>
+ {% placeholder "main" or %}
+        {% endplaceholder %}
+       
+	     <br>
+	     <br>
+   <hr>
+    <div class="cell large-6  medium-6 small-12 " >
+	
+        {% placeholder "latest1" or %}
+        {% endplaceholder %}
+
+
+   </div>
+   <div class="large-4  medium-6 small-12 columns" >
+
+        {% placeholder "latest2" or %}
+        {% endplaceholder %}
+
+
+   </div>
+ 
+ </div
+  
+</div>
+</div>
+{% endblock content %}
+
+

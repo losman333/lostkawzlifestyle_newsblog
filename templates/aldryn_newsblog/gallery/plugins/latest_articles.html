@@ -1,0 +1,17 @@
+
+{% load i18n %}
+{% load i18n staticfiles thumbnail cms_tags apphooks_config_tags %}
+
+<div class="row large-collapse">
+{% for article in article_list %}  
+
+						<div class="large-12 columns">
+			
+					</div>
+					
+									
+{% empty %}
+    <p>{% trans "No items available" %}</p>
+{% endfor %}
+ </div>
+ {% include "aldryn_newsblog/includes/pagination.html" %}
