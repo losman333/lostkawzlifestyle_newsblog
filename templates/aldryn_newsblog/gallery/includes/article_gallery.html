@@ -6,7 +6,8 @@
     {% if not article.published %} unpublished{% endif %}">
     <div class="row">
             	
-                
+          <br>
+          <br>      
                 	
     <h1>{% render_model article "title" "" "" "striptags" %}</h1>
     <h3 >{% render_model article "lead_in" "" "" "truncatewords:'10'|striptags" %}</h3>

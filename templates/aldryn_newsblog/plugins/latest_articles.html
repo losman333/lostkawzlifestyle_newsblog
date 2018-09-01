@@ -2,10 +2,10 @@
 {% load i18n %}
 {% load i18n staticfiles thumbnail cms_tags apphooks_config_tags %}
 
-<div class="row large-collapse">
+<div class="grid-x grid-margin-x large-up-3 medium-up-1 small-up-1">
 {% for article in article_list %}  
 
-						<div class="large-12 columns">
+						<div class="cell ">
 			
 		   	 			{% include "aldryn_newsblog/includes/latest.html" with namespace=instance.app_config.namespace%}
 					</div>

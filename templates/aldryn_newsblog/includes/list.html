@@ -5,24 +5,33 @@
 <article class="article
     {% if article.is_featured %} featured{% endif %}
     {% if not article.published %} unpublished{% endif %}">
-	<div class="row">
-		<div class="large-12 medium-12 small-12">
+	
         {% if not detail_view %}
         
-        <div class="large-4 medium-3 small-12 columns">
+        <div class="cell large-8">
+        	<br>
+        	<div class="callout">
+<h1><a href="{% namespace_url 'article-detail' article.slug namespace=namespace default='' %}">{% render_model article "title" %}	</a></h1>
 
-	<p> <img src="{% thumbnail article.featured_image 450x316 crop subject_location=article.featured_image.subject_location %}" alt="{{ article.featured_image.alt }}"></p>
+	<p> <img src="{% thumbnail article.featured_image 900x450 crop subject_location=article.featured_image.subject_location %}" alt="{{ article.featured_image.alt }}"></p>
+	<br>
+	
+	<br>
+	<hr>
+ {% render_model article "lead_in" "" "" "striptags" %}
+ <br>
+ <br>
+ 		              <div class=""><a href="{% namespace_url 'article-detail' article.slug namespace=namespace default='' %}"><button class="button">read more</button></a></div>
+
 </div>
-				
-       	<div class="large-8 medium-9 small-12  columns" >
-           <h4>
-            <a href="{% namespace_url 'article-detail' article.slug namespace=namespace default='' %}">{% render_model article "title" %}
-            	
-            	</a>
-            </h4>
-            
+<br>
+		
+       	
+           
             	<h7> 
-          	<a href="{% namespace_url 'article-detail' article.slug namespace=namespace default='' %}"> {% render_model article "lead_in" "" "" "striptags" %}</a>
+          	
+       
+       
         {% else %}
            
         {% endif %}
@@ -60,10 +69,11 @@
 
     {% if detail_view %}
     <br>
-     
+    <hr> 
         
     {% endif %}
-    </div>
-    </div>
+    
+    
+ 
 </article>
 

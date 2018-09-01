@@ -7,17 +7,18 @@
 	
 {% block newsblog_content %}
 
-<div class="row">
-<div class="large-10 medium-10 large-centered medium-centered columns">
+
+<div class="grid-container ">
 	
 
 	<br>
-	<div class="large-8 columns">
+	<div class="cell">
 {% placeholder "main" or %}
         {% endplaceholder %}
         
 	  
-		
+		<div class="cell  "><h1>News</h1></div>
+		<hr>
       
 	  
     {% for article in article_list %}
@@ -27,6 +28,8 @@
     			
 
              {% include "aldryn_newsblog/includes/list.html" %}
+             <hr>
+            
 				  {% empty %}
     
     <br>

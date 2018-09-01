@@ -9,25 +9,25 @@
 {% block newsblog_content %}
 <br>
 <br>
-<div class="row large-collapsed">
+<div class="grid-container">
 
-<div class="large-10 large-centered">
 
 		
-			
+	<div class="grid-x grid-margin-x large-up-2">		
 	 {% for article in article_list %}
     
-    	<div class="large-6 columns">
+    	
     		
 
-    			
 
+    			
+			<div class="cell">
              {% include "aldryn_newsblog/gallery/includes/list_gallery.html" %} 
 				  {% empty %}
+			</div
   
-   </div>
 {% endfor %}  
-
+ </div>
 
 {% include "aldryn_newsblog/includes/pagination.html" %}
 </div>
@@ -37,7 +37,7 @@
 </div>
 
   
-  </div> 
+  
 
 {% endblock %}
 
