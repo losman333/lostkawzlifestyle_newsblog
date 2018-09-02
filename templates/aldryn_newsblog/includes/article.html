@@ -1,18 +1,25 @@
 {% load i18n staticfiles thumbnail cms_tags apphooks_config_tags %}
 
  <br>
+<<<<<<< HEAD
+ <div class="grid-container">
+
+=======
  <div class="large-12 large-centered columns">
  
   			
                <div class="large-8 medium-12 small-12 large-centered medium-centered small-expanded columns">
+>>>>>>> f19a4b55a8b2fa6103cc4e084ef01fa1fe32999d
              
 <article class="article
     {% if article.is_featured %} featured{% endif %}
     {% if not article.published %} unpublished{% endif %}">
    
-          	   	
+          <div class="grid-x ">
+  			
+               <div class="cell "> 	   	
     <h1>{% render_model article "title" "" "" "striptags" %}</h1>
-    <h3 >{% render_model article "lead_in" "" "" "truncatewords:'20'|striptags" %}</h3>
+    
 
     <span class="meta">
         by
@@ -71,7 +78,12 @@
     <br>
     
      	
+<<<<<<< HEAD
+  <div class="large-8 columns">
+  	{% render_model article "lead_in" "" "" "truncatewords:'20'|striptags" %}
+=======
   <div class="large-12 large-centered columns">
+>>>>>>> f19a4b55a8b2fa6103cc4e084ef01fa1fe32999d
   			
         {% render_placeholder article.content language placeholder_language %}
       </div>
@@ -81,10 +93,15 @@
     {% endif %}
  </div>
  
+</div>
+</div>
 		
 </article>
+<<<<<<< HEAD
+=======
 
 
+>>>>>>> f19a4b55a8b2fa6103cc4e084ef01fa1fe32999d
 
 		
 		 

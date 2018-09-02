@@ -5,6 +5,43 @@
 	
 	
 
+<<<<<<< HEAD
+{% block newsblog_content %}
+
+<br>
+<br>
+
+<hr>
+	<div class="grid-container">
+		
+		
+	 {% for article in article_list %}
+    
+    
+	
+	
+    		
+		{% include "aldryn_newsblog/artists/includes/article_list.html" %}
+				  {% empty %}
+   
+{% endfor %}  
+
+{% include "aldryn_newsblog/includes/pagination.html" %}
+			
+{% render_placeholder view.config.placeholder_base_sidebar %}
+
+      
+
+        	
+
+
+  
+
+</div>
+</div>
+{% endblock %}
+
+=======
 
 {% block newsblog_content %}
 <br>
@@ -43,6 +80,7 @@
 
 
 
+>>>>>>> f19a4b55a8b2fa6103cc4e084ef01fa1fe32999d
     
 
 

@@ -8,9 +8,9 @@
     {% if article.is_featured %} featured{% endif %}
     {% if not article.published %} unpublished{% endif %}">
     	 
-
+<div class="cell">
         {% if not detail_view %}
-        
+        	
 				
            <h4>
             <a href="{% namespace_url 'article-detail' article.slug namespace=namespace default='' %}">
@@ -21,7 +21,7 @@
             	<h6> 
           	<a href="{% namespace_url 'article-detail' article.slug namespace=namespace default='' %}"> {% render_model article "lead_in" "" "" "striptags" %}</a>
         {% else %}
-           
+          
         {% endif %}
     </h6>
       </div>
@@ -60,5 +60,5 @@
      
         
     {% endif %}
-    
+     </div>
 </article>

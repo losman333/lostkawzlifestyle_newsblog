@@ -1,6 +1,21 @@
 {% load i18n staticfiles thumbnail cms_tags apphooks_config_tags %}
 
 {% load i18n %}
+<<<<<<< HEAD
+ 
+		    
+
+<div class="row large-collapsed">
+{% for article in articles_list %}
+
+
+
+						
+						<div class="large-12 columns">
+		   	 			{% include "aldryn_newsblog/graffiti/includes/featured.html" with namespace=instance.app_config.namespace%}
+		   	 			</div>
+						
+=======
  <div class="row collapse expanded">
 	<div class="small-12 medium-12 large-12 columns">
 		<div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
@@ -29,14 +44,21 @@
 	
 	</header>
 	</li>
+>>>>>>> f19a4b55a8b2fa6103cc4e084ef01fa1fe32999d
 	
 {% empty %}
     <p>{% trans "No items available" %}</p>
 {% endfor %}
+<<<<<<< HEAD
+</div>
+			
+  
+=======
 
 			
   </ul>
  
+>>>>>>> f19a4b55a8b2fa6103cc4e084ef01fa1fe32999d
  
  
 

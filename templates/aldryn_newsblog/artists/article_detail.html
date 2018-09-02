@@ -1,6 +1,9 @@
 {% extends "aldryn_newsblog/base.html" %}
 {% load i18n staticfiles thumbnail cms_tags apphooks_config_tags %}
+<<<<<<< HEAD
+=======
 
+>>>>>>> f19a4b55a8b2fa6103cc4e084ef01fa1fe32999d
 {% block title %}
     {{ article.title }} - {{ block.super }}
 {% endblock %}
@@ -9,6 +12,25 @@
 {% block newsblog_content %}
 
 
+<<<<<<< HEAD
+  
+				
+ 
+  				
+  			        {% include "aldryn_newsblog/graffiti/includes/article.html" with detail_view="true" %}
+		
+		
+
+ 
+	{% render_placeholder view.config.placeholder_detail_bottom %}
+
+    {% static_placeholder "newsblog_social" %}
+
+    
+
+{% endblock %}
+ 
+=======
   				<div class="row">
 	<div class="large-10 large-centered columns">
   			        {% include "aldryn_newsblog/artists/includes/article.html" with detail_view="true" %}
@@ -21,3 +43,4 @@
 
   
 {% endblock %}
+>>>>>>> f19a4b55a8b2fa6103cc4e084ef01fa1fe32999d

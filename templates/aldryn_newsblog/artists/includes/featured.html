@@ -1,6 +1,10 @@
  {% load i18n staticfiles thumbnail cms_tags apphooks_config_tags %}
 {% load i18n cms_tags apphooks_config_tags %}
+<<<<<<< HEAD
+<div class="row">
+=======
 
+>>>>>>> f19a4b55a8b2fa6103cc4e084ef01fa1fe32999d
 <article class="article
     {% if article.is_featured %} featured{% endif %}
     {% if not article.published %} unpublished{% endif %}">
@@ -11,6 +15,27 @@
 	
        	
 		
+<<<<<<< HEAD
+			<div class="large-12 columns">
+     	
+      
+       <div class="large-4 medium-4 small-3 columns">
+      					         <p> <img src="{% thumbnail article.featured_image 150x150 crop subject_location=article.featured_image.subject_location %}" alt="{{ article.featured_image.alt }}"></p>
+
+      </div>
+      <div class="large-8 medium-8 small-9 columns">
+      <h7> <a href="{% namespace_url 'article-detail' article.slug namespace=namespace default='' %}">{% render_model article "title" %}</a></h7>
+	                      	<p> <a class="aw a5w" href="{% namespace_url 'article-detail' article.slug namespace=namespace default='' %}"> {% render_model article "lead_in" "" "" "truncatewords:'13'|striptags" %}</a></p>
+
+ 
+
+      </div>
+      
+  
+      
+    </div>      	
+            
+=======
 		
 			<h2  >
             <a class="aw a5w"  href="{% namespace_url 'article-detail' article.slug namespace=namespace default='' %}">{% render_model article "title" %}
@@ -22,6 +47,7 @@
           	
           	<a class="aw a5w" href="{% namespace_url 'article-detail' article.slug namespace=namespace default='' %}"> {% render_model article "lead_in" "" "" "striptags" %}</a>
       		</h4>
+>>>>>>> f19a4b55a8b2fa6103cc4e084ef01fa1fe32999d
      
    
 
@@ -67,7 +93,11 @@
     <br>
       
   			
+<<<<<<< HEAD
+		
+=======
 		</div>
+>>>>>>> f19a4b55a8b2fa6103cc4e084ef01fa1fe32999d
         
     {% endif %}
 </article>
