@@ -49,7 +49,7 @@ INSTALLED_APPS = [
     'django.contrib.sites',
     'djangocms_text_ckeditor',
     'djangocms_link',
-    'djangocms_file',
+   
     'djangocms_picture',
     'djangocms_video',
     'djangocms_googlemap',
