@@ -1,0 +1,288 @@
+1	Can use Structure mode	1	use_structure
+2	Can change page	2	change_page
+3	Can add text	3	add_text
+4	Can change text	3	change_text
+5	Can delete text	3	delete_text
+6	Can add Folder	4	add_folder
+7	Can change Folder	4	change_folder
+8	Can delete Folder	4	delete_folder
+9	Can use directory listing	4	can_use_directory_listing
+10	Can add folder permission	5	add_folderpermission
+11	Can change folder permission	5	change_folderpermission
+12	Can delete folder permission	5	delete_folderpermission
+13	Can add file	6	add_file
+14	Can change file	6	change_file
+15	Can delete file	6	delete_file
+16	Can add clipboard	7	add_clipboard
+17	Can change clipboard	7	change_clipboard
+18	Can delete clipboard	7	delete_clipboard
+19	Can add clipboard item	8	add_clipboarditem
+20	Can change clipboard item	8	change_clipboarditem
+21	Can delete clipboard item	8	delete_clipboarditem
+22	Can add image	9	add_image
+23	Can change image	9	change_image
+24	Can delete image	9	delete_image
+25	Can add thumbnail option	10	add_thumbnailoption
+26	Can change thumbnail option	10	change_thumbnailoption
+27	Can delete thumbnail option	10	delete_thumbnailoption
+28	Can add source	11	add_source
+29	Can change source	11	change_source
+30	Can delete source	11	delete_source
+31	Can add thumbnail	12	add_thumbnail
+32	Can change thumbnail	12	change_thumbnail
+33	Can delete thumbnail	12	delete_thumbnail
+34	Can add thumbnail dimensions	13	add_thumbnaildimensions
+35	Can change thumbnail dimensions	13	change_thumbnaildimensions
+36	Can delete thumbnail dimensions	13	delete_thumbnaildimensions
+37	Can add revision	14	add_revision
+38	Can change revision	14	change_revision
+39	Can delete revision	14	delete_revision
+40	Can add version	15	add_version
+41	Can change version	15	change_version
+42	Can delete version	15	delete_version
+43	Can add site	16	add_site
+44	Can change site	16	change_site
+45	Can delete site	16	delete_site
+46	Can add user setting	17	add_usersettings
+47	Can change user setting	17	change_usersettings
+48	Can delete user setting	17	delete_usersettings
+49	Can add page	2	add_page
+50	Can delete page	2	delete_page
+51	Can view page	2	view_page
+52	Can publish page	2	publish_page
+53	Can edit static placeholders	2	edit_static_placeholder
+54	Can add Page global permission	18	add_globalpagepermission
+55	Can change Page global permission	18	change_globalpagepermission
+56	Can delete Page global permission	18	delete_globalpagepermission
+57	Can add Page permission	19	add_pagepermission
+58	Can change Page permission	19	change_pagepermission
+59	Can delete Page permission	19	delete_pagepermission
+60	Can add User (page)	20	add_pageuser
+61	Can change User (page)	20	change_pageuser
+62	Can delete User (page)	20	delete_pageuser
+63	Can add User group (page)	21	add_pageusergroup
+64	Can change User group (page)	21	change_pageusergroup
+65	Can delete User group (page)	21	delete_pageusergroup
+66	Can add placeholder	1	add_placeholder
+67	Can change placeholder	1	change_placeholder
+68	Can delete placeholder	1	delete_placeholder
+69	Can add cms plugin	22	add_cmsplugin
+70	Can change cms plugin	22	change_cmsplugin
+71	Can delete cms plugin	22	delete_cmsplugin
+72	Can add title	23	add_title
+73	Can change title	23	change_title
+74	Can delete title	23	delete_title
+75	Can add placeholder reference	24	add_placeholderreference
+76	Can change placeholder reference	24	change_placeholderreference
+77	Can delete placeholder reference	24	delete_placeholderreference
+78	Can add static placeholder	25	add_staticplaceholder
+79	Can change static placeholder	25	change_staticplaceholder
+80	Can delete static placeholder	25	delete_staticplaceholder
+81	Can add alias plugin model	26	add_aliaspluginmodel
+82	Can change alias plugin model	26	change_aliaspluginmodel
+83	Can delete alias plugin model	26	delete_aliaspluginmodel
+84	Can add urlconf revision	27	add_urlconfrevision
+85	Can change urlconf revision	27	change_urlconfrevision
+86	Can delete urlconf revision	27	delete_urlconfrevision
+87	Can add cache key	28	add_cachekey
+88	Can change cache key	28	change_cachekey
+89	Can delete cache key	28	delete_cachekey
+90	Can add link	29	add_link
+91	Can change link	29	change_link
+92	Can delete link	29	delete_link
+93	Can add file	30	add_file
+94	Can change file	30	change_file
+95	Can delete file	30	delete_file
+96	Can add folder	31	add_folder
+97	Can change folder	31	change_folder
+98	Can delete folder	31	delete_folder
+99	Can add picture	32	add_picture
+100	Can change picture	32	change_picture
+101	Can delete picture	32	delete_picture
+102	Can add video player	33	add_videoplayer
+103	Can change video player	33	change_videoplayer
+104	Can delete video player	33	delete_videoplayer
+105	Can add video source	34	add_videosource
+106	Can change video source	34	change_videosource
+107	Can delete video source	34	delete_videosource
+108	Can add video track	35	add_videotrack
+109	Can change video track	35	change_videotrack
+110	Can delete video track	35	delete_videotrack
+111	Can add google map	36	add_googlemap
+112	Can change google map	36	change_googlemap
+113	Can delete google map	36	delete_googlemap
+114	Can add google map marker	37	add_googlemapmarker
+115	Can change google map marker	37	change_googlemapmarker
+116	Can delete google map marker	37	delete_googlemapmarker
+117	Can add google map route	38	add_googlemaproute
+118	Can change google map route	38	change_googlemaproute
+119	Can delete google map route	38	delete_googlemaproute
+120	Can add Snippet	39	add_snippet
+121	Can change Snippet	39	change_snippet
+122	Can delete Snippet	39	delete_snippet
+123	Can add Snippet	40	add_snippetptr
+124	Can change Snippet	40	change_snippetptr
+125	Can delete Snippet	40	delete_snippetptr
+126	Can add style	41	add_style
+127	Can change style	41	change_style
+128	Can delete style	41	delete_style
+129	Can add multi columns	42	add_multicolumns
+130	Can change multi columns	42	change_multicolumns
+131	Can delete multi columns	42	delete_multicolumns
+132	Can add column	43	add_column
+133	Can change column	43	change_column
+134	Can delete column	43	delete_column
+135	Can add youtube	44	add_youtube
+136	Can change youtube	44	change_youtube
+137	Can delete youtube	44	delete_youtube
+138	Can add subscription plugin	45	add_subscriptionplugin
+139	Can change subscription plugin	45	change_subscriptionplugin
+140	Can delete subscription plugin	45	delete_subscriptionplugin
+141	Can add Category	46	add_category
+142	Can change Category	46	change_category
+143	Can delete Category	46	delete_category
+144	Can add Keyword	47	add_keyword
+145	Can change Keyword	47	change_keyword
+146	Can delete Keyword	47	delete_keyword
+147	Can add Campaign	48	add_campaign
+148	Can change Campaign	48	change_campaign
+149	Can delete Campaign	48	delete_campaign
+150	Can add campaign archive plugin	49	add_campaignarchiveplugin
+151	Can change campaign archive plugin	49	change_campaignarchiveplugin
+152	Can delete campaign archive plugin	49	delete_campaignarchiveplugin
+153	Can add selected campaigns plugin	50	add_selectedcampaignsplugin
+154	Can change selected campaigns plugin	50	change_selectedcampaignsplugin
+155	Can delete selected campaigns plugin	50	delete_selectedcampaignsplugin
+156	Can add category	52	add_category
+157	Can change category	52	change_category
+158	Can delete category	52	delete_category
+159	Can add application configuration	54	add_newsblogconfig
+160	Can change application configuration	54	change_newsblogconfig
+161	Can delete application configuration	54	delete_newsblogconfig
+162	Can add article	56	add_article
+163	Can change article	56	change_article
+164	Can delete article	56	delete_article
+165	Can add news blog archive plugin	57	add_newsblogarchiveplugin
+166	Can change news blog archive plugin	57	change_newsblogarchiveplugin
+167	Can delete news blog archive plugin	57	delete_newsblogarchiveplugin
+168	Can add news blog article search plugin	58	add_newsblogarticlesearchplugin
+169	Can change news blog article search plugin	58	change_newsblogarticlesearchplugin
+170	Can delete news blog article search plugin	58	delete_newsblogarticlesearchplugin
+171	Can add news blog authors plugin	59	add_newsblogauthorsplugin
+172	Can change news blog authors plugin	59	change_newsblogauthorsplugin
+173	Can delete news blog authors plugin	59	delete_newsblogauthorsplugin
+174	Can add news blog categories plugin	60	add_newsblogcategoriesplugin
+175	Can change news blog categories plugin	60	change_newsblogcategoriesplugin
+176	Can delete news blog categories plugin	60	delete_newsblogcategoriesplugin
+177	Can add news blog featured articles plugin	61	add_newsblogfeaturedarticlesplugin
+178	Can change news blog featured articles plugin	61	change_newsblogfeaturedarticlesplugin
+179	Can delete news blog featured articles plugin	61	delete_newsblogfeaturedarticlesplugin
+180	Can add news blog latest articles plugin	62	add_newsbloglatestarticlesplugin
+181	Can change news blog latest articles plugin	62	change_newsbloglatestarticlesplugin
+182	Can delete news blog latest articles plugin	62	delete_newsbloglatestarticlesplugin
+183	Can add news blog related plugin	63	add_newsblogrelatedplugin
+184	Can change news blog related plugin	63	change_newsblogrelatedplugin
+185	Can delete news blog related plugin	63	delete_newsblogrelatedplugin
+186	Can add news blog tags plugin	64	add_newsblogtagsplugin
+187	Can change news blog tags plugin	64	change_newsblogtagsplugin
+188	Can delete news blog tags plugin	64	delete_newsblogtagsplugin
+189	Can add Group	66	add_group
+190	Can change Group	66	change_group
+191	Can delete Group	66	delete_group
+192	Can add Person	68	add_person
+193	Can change Person	68	change_person
+194	Can delete Person	68	delete_person
+195	Can add people plugin	69	add_peopleplugin
+196	Can change people plugin	69	change_peopleplugin
+197	Can delete people plugin	69	delete_peopleplugin
+198	Can add gallery plugin	70	add_galleryplugin
+199	Can change gallery plugin	70	change_galleryplugin
+200	Can delete gallery plugin	70	delete_galleryplugin
+201	Can add slide plugin	71	add_slideplugin
+202	Can change slide plugin	71	change_slideplugin
+203	Can delete slide plugin	71	delete_slideplugin
+204	Can add slide folder plugin	72	add_slidefolderplugin
+205	Can change slide folder plugin	72	change_slidefolderplugin
+206	Can delete slide folder plugin	72	delete_slidefolderplugin
+207	Can add Tag	73	add_tag
+208	Can change Tag	73	change_tag
+209	Can delete Tag	73	delete_tag
+210	Can add Tagged Item	74	add_taggeditem
+211	Can change Tagged Item	74	change_taggeditem
+212	Can delete Tagged Item	74	delete_taggeditem
+213	Can add log entry	75	add_logentry
+214	Can change log entry	75	change_logentry
+215	Can delete log entry	75	delete_logentry
+216	Can add permission	76	add_permission
+217	Can change permission	76	change_permission
+218	Can delete permission	76	delete_permission
+219	Can add group	77	add_group
+220	Can change group	77	change_group
+221	Can delete group	77	delete_group
+222	Can add user	78	add_user
+223	Can change user	78	change_user
+224	Can delete user	78	delete_user
+225	Can add content type	79	add_contenttype
+226	Can change content type	79	change_contenttype
+227	Can delete content type	79	delete_contenttype
+228	Can add session	80	add_session
+229	Can change session	80	change_session
+230	Can delete session	80	delete_session
+234	Can add form	82	add_form
+235	Can change form	82	change_form
+236	Can delete form	82	delete_form
+237	Can add form	83	add_formdefinition
+238	Can change form	83	change_formdefinition
+239	Can delete form	83	delete_formdefinition
+240	Can add field	84	add_formfield
+241	Can change field	84	change_formfield
+242	Can delete field	84	delete_formfield
+243	Can add form submission	85	add_formsubmission
+244	Can change form submission	85	change_formsubmission
+245	Can delete form submission	85	delete_formsubmission
+246	Can export Form Submission	85	export_formsubmission
+247	Can add form plugin	86	add_formplugin
+248	Can change form plugin	86	change_formplugin
+249	Can delete form plugin	86	delete_formplugin
+250	Can add fieldset plugin	87	add_fieldsetplugin
+251	Can change fieldset plugin	87	change_fieldsetplugin
+252	Can delete fieldset plugin	87	delete_fieldsetplugin
+253	Can add field plugin	88	add_fieldplugin
+254	Can change field plugin	88	change_fieldplugin
+255	Can delete field plugin	88	delete_fieldplugin
+256	Can add text area field plugin	89	add_textareafieldplugin
+257	Can change text area field plugin	89	change_textareafieldplugin
+258	Can delete text area field plugin	89	delete_textareafieldplugin
+259	Can add email field plugin	90	add_emailfieldplugin
+260	Can change email field plugin	90	change_emailfieldplugin
+261	Can delete email field plugin	90	delete_emailfieldplugin
+262	Can add file upload field plugin	91	add_fileuploadfieldplugin
+263	Can change file upload field plugin	91	change_fileuploadfieldplugin
+264	Can delete file upload field plugin	91	delete_fileuploadfieldplugin
+265	Can add image upload field plugin	92	add_imageuploadfieldplugin
+266	Can change image upload field plugin	92	change_imageuploadfieldplugin
+267	Can delete image upload field plugin	92	delete_imageuploadfieldplugin
+268	Can add option	93	add_option
+269	Can change option	93	change_option
+270	Can delete option	93	delete_option
+271	Can add form button plugin	94	add_formbuttonplugin
+272	Can change form button plugin	94	change_formbuttonplugin
+273	Can delete form button plugin	94	delete_formbuttonplugin
+274	Can add Form submission	95	add_formsubmission
+275	Can change Form submission	95	change_formsubmission
+276	Can delete Form submission	95	delete_formsubmission
+277	Can add captcha store	96	add_captchastore
+278	Can change captcha store	96	change_captchastore
+279	Can delete captcha store	96	delete_captchastore
+280	Can add email notification form plugin	86	add_emailnotificationformplugin
+281	Can change email notification form plugin	86	change_emailnotificationformplugin
+282	Can delete email notification form plugin	86	delete_emailnotificationformplugin
+283	Can add email notification	97	add_emailnotification
+284	Can change email notification	97	change_emailnotification
+285	Can delete email notification	97	delete_emailnotification
+286	Can add background image	99	add_backgroundimage
+287	Can change background image	99	change_backgroundimage
+288	Can delete background image	99	delete_backgroundimage
+\.
+
+

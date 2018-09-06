@@ -1,0 +1,10 @@
+1	aldryn_newsblog.cms_appconfig.NewsBlogConfig	aldryn_newsblog_default	{}	slug	302	5	t	t	1	2	3	4	5	6	7	\N	10	4	0
+8	aldryn_newsblog.cms_appconfig.NewsBlogConfig	aldryn_newsblog_about	{"config": {"default_published": false}}	s	302	5	t	t	94	93	98	99	97	96	95		10	4	0
+7	aldryn_newsblog.cms_appconfig.NewsBlogConfig	aldryn_newsblog_gallery	{"config": {"default_published": false}}	s	302	5	t	t	87	86	91	92	90	89	88	gallery	2	3	0
+5	aldryn_newsblog.cms_appconfig.NewsBlogConfig	aldryn_newsblog_news	{"config": {"default_published": false}}	s	302	5	t	t	56	55	60	61	59	58	57		10	3	3
+6	aldryn_newsblog.cms_appconfig.NewsBlogConfig	aldryn_newsblog_music	{"config": {"default_published": false}}	s	302	5	t	t	69	68	73	74	72	71	70	music	10	4	0
+4	aldryn_newsblog.cms_appconfig.NewsBlogConfig	aldryn_newsblog_graffiti	{"config": {"default_published": false}}	s	302	5	t	t	49	48	53	54	52	51	50	graffiti	10	4	0
+9	aldryn_newsblog.cms_appconfig.NewsBlogConfig	aldryn_newsblog_events	{"config": {"default_published": false}}	s	302	5	t	t	101	100	105	106	104	103	102	events	10	4	0
+\.
+
+

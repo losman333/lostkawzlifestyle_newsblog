@@ -1,0 +1,19 @@
+15	en	Music	\N	\N	\N	music	music	f	\N	2017-03-19 19:06:46.308-07	t	t	0	15	16
+16	en	Music	\N	\N	\N	music	music	f	\N	2017-03-19 19:06:46.308-07	t	f	1	16	15
+14	en	Gallery	\N	\N	\N	gallery	gallery	f	\N	2017-03-19 15:26:29.621-07	t	f	0	14	9
+13	en	Events	\N	\N	\N	events	events	f	\N	2017-03-19 15:24:49.217-07	t	f	1	13	7
+12	en	Graffiti	\N	\N	\N	graffiti-1	graffiti-1	f	\N	2017-03-19 15:25:43.101-07	t	f	0	12	8
+8	en	Graffiti	\N	\N	\N	graffiti-1	graffiti-1	f	\N	2017-03-19 15:25:43.101-07	t	t	0	8	12
+11	en	About				about	about	f	\N	2017-03-19 15:31:25.257-07	t	f	1	11	10
+3	en	newz				newz	newz	f	\N	2017-03-18 18:10:21.677-07	t	t	0	3	5
+7	en	Events	\N	\N	\N	events	events	f	\N	2017-03-19 15:24:49.217-07	t	t	1	7	13
+24	en	contact	\N	\N	\N	contact	contact	f	\N	2017-03-21 22:40:22.847-07	t	f	1	24	23
+5	en	newz				newz	newz	f	\N	2017-03-18 18:10:21.677-07	t	f	1	5	3
+9	en	Gallery	\N	\N	\N	gallery	gallery	f	\N	2017-03-19 15:26:29.621-07	t	t	0	9	14
+29	en	News	\N	\N	\N	news		f	\N	2017-03-27 11:01:02.6-07	t	t	1	29	30
+30	en	News	\N	\N	\N	news		f	\N	2017-03-27 11:01:02.6-07	t	f	1	30	29
+10	en	About				about	about	f	\N	2017-03-19 15:31:25.257-07	t	t	0	10	11
+23	en	contact	\N	\N	\N	contact	contact	f	\N	2017-03-21 22:40:22.847-07	t	t	1	23	24
+\.
+
+
