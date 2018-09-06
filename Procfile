@@ -1,1 +1,1 @@
-web: gunicorn lostkawzlifestyle_newsblog.wsgi --log-file - 
+web: gunicorn lostkawzlifestyle1.wsgi --log-file - 
