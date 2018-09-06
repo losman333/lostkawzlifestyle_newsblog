@@ -147,20 +147,18 @@ font-family: 'Anton', sans-serif;
 	
 	
 }
- 
+
  .orbit-container {
   position: relative;
-  height: 600px; }
+  height: 349px; }
 
 .orbit-caption {
   position: relative;
   float: right;
   top: 0;
   left: 0;
-  width: 32.33%;
+  width: 100%;
   height: 100%;
-  background-color: rgba(0.3, 0.3, 0.3, 0.3); }
-
 
 .orbit-caption p {
   position: relative;
