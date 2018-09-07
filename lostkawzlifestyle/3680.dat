@@ -1,6 +1,0 @@
-1	contact	[{"name": "textfield_1", "label": "name", "field_occurrence": 1, "value": "carlos"}, {"name": "emailfield_1", "label": "email", "field_occurrence": 1, "value": "losman3331984@gmail.com"}, {"name": "textareafield_1", "label": "message", "field_occurrence": 1, "value": "whats up"}]	[]	en	http://127.0.0.1:8000/contact/	2017-03-22 07:29:30.051-07
-2	contact	[{"name": "textfield_1", "label": "name", "field_occurrence": 1, "value": "carlos ruiz"}, {"name": "emailfield_1", "label": "email", "field_occurrence": 1, "value": "losman3331984@gmail.com"}, {"name": "textareafield_1", "label": "message", "field_occurrence": 1, "value": "whats up"}]	[]	en	http://127.0.0.1:8000/contact/	2017-03-22 10:00:23.159-07
-3	contact	[{"name": "textfield_1", "label": "name", "field_occurrence": 1, "value": "fucking goose"}, {"name": "emailfield_1", "label": "email", "field_occurrence": 1, "value": "losman3331984@gmail.com"}, {"name": "textareafield_1", "label": "message", "field_occurrence": 1, "value": "test"}]	[]	en	http://127.0.0.1:8000/contact/	2017-03-22 10:12:34.206-07
-\.
-
-
