@@ -1,0 +1,1 @@
+aldryn-apphooks-config==0.3.3
