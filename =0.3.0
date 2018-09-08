@@ -1,0 +1,8 @@
+Requirement already satisfied: aldryn-mailchimp in /Users/carlosruiz/.virtualenvs/lkenv/lib/python2.7/site-packages (0.3.0)
+Requirement already satisfied: django-admin-sortable in /Users/carlosruiz/.virtualenvs/lkenv/lib/python2.7/site-packages (from aldryn-mailchimp) (2.0.22)
+Requirement already satisfied: pyrate>=0.5a5 in /Users/carlosruiz/.virtualenvs/lkenv/lib/python2.7/site-packages (from aldryn-mailchimp) (0.5a9)
+Requirement already satisfied: oauthlib<0.7.0 in /Users/carlosruiz/.virtualenvs/lkenv/lib/python2.7/site-packages (from aldryn-mailchimp) (0.6.3)
+Requirement already satisfied: django in /Users/carlosruiz/.virtualenvs/lkenv/lib/python2.7/site-packages (from django-admin-sortable->aldryn-mailchimp) (1.10.8)
+Requirement already satisfied: six in /Users/carlosruiz/.virtualenvs/lkenv/lib/python2.7/site-packages (from pyrate>=0.5a5->aldryn-mailchimp) (1.10.0)
+Requirement already satisfied: requests-oauthlib in /Users/carlosruiz/.virtualenvs/lkenv/lib/python2.7/site-packages (from pyrate>=0.5a5->aldryn-mailchimp) (0.8.0)
+Requirement already satisfied: requests in /Users/carlosruiz/.virtualenvs/lkenv/lib/python2.7/site-packages (from pyrate>=0.5a5->aldryn-mailchimp) (2.13.0)
