@@ -1,0 +1,14 @@
+{% load i18n %}
+<form class="mailchimp-subscription-form" action="{% url 'admin:aldryn-mailchimp-subscribe' %}" method="POST">
+<div class="input-group">
+
+  
+  <div class="input-group-button">
+  	{% csrf_token %}
+		{{ form }}
+    <input type="submit" class="button" >
+  </div>
+</div>
+
+	
+</form>
