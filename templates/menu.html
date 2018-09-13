@@ -1,5 +1,6 @@
 {% load menu_tags %}
 
+
 <div data-sticky-container>
 	  <div id="siteNavStickyWrap" class="sticky" data-sticky data-sticky-on="small" data-anchor="siteContainer" data-margin-top="0">
 	<div class="title-bar" data-sticky data-responsive-toggle="responsive-menu" data-hide-for="medium">
@@ -7,6 +8,7 @@
   <button class="menu-icon" type="button" data-toggle="offCanvas"></button>
   <div class="title-bar-title" data-sticky>lostkawz</div>
 </div>
+<div class="grid-container">
     <div class="top-bar" data-sticky data-margin-top="0" id="responsive-menu">
     	<div class="logo-wrapper logo-wrapper-small hide-for-small-only">
     			<div class="logo logo-small">
@@ -14,7 +16,10 @@
      					<img src="https://s3-us-west-1.amazonaws.com/lostkawzlifestyle/static/images/lk-new.png" alt="logo" style="width:150px;height:150px;"></a> 
     			</div>
   			</div>
-        <div class="top-bar-left ">
+  		
+
+        <div class="top-bar-right ">
+        	
             <ul class="menu">
                 <li >
 {% for child in children %}
@@ -30,6 +35,7 @@
 	{% endif %}
 </li>
 {% endfor %}
+</div>
                 </li>
             </ul>
         </div>

@@ -81,7 +81,7 @@ INSTALLED_APPS = [
     'parler',
     'sortedm2m',
     'taggit',
-
+    'social_widgets',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -232,7 +232,9 @@ STATIC_ROOT = 'lostkawzlifestyle1/static/'
 STATICFILES_LOCATION = 'static'
 STATICFILES_STORAGE = 'custom_storages.StaticStorage'
 
-STATIC_URL = "https://%s/%s/" % (AWS_S3_CUSTOM_DOMAIN, STATICFILES_LOCATION)
+STATIC_URL = '/static/'
+
+"https://%s/%s/" % (AWS_CLOUDFRONT_DOMAIN, STATICFILES_LOCATION)
 
 "https://%s/%s/" % (AWS_CLOUDFRONT_DOMAIN, STATICFILES_LOCATION)
 

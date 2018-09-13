@@ -1,5 +1,6 @@
 {% load i18n staticfiles thumbnail cms_tags apphooks_config_tags %}
 {% load i18n cms_tags apphooks_config_tags %}
+{% load social_widgets %}
 
 	
 <article class="article
@@ -13,20 +14,27 @@
         	<div class="">
 
 	<p> <img src="{% thumbnail article.featured_image 900x450 crop subject_location=article.featured_image.subject_location %}" alt="{{ article.featured_image.alt }}"></p>
-	
+	<br>
 	<h1><a href="{% namespace_url 'article-detail' article.slug namespace=namespace default='' %}">{% render_model article "title" %}	</a></h1>
+	<br>
 
-	<hr>
  {% render_model article "lead_in" "" "" "striptags" %}
  <br>
  <br>
- 		              <div class=""><a href="{% namespace_url 'article-detail' article.slug namespace=namespace default='' %}"><button class="button">read more</button></a></div>
 
 </div>
 <br>
-		
-       	
-           
+<div class="grid-x marging-x large-up-2 large-offset- ">
+<div class="cell  ">
+	<button type="button" class="button social facebook">
+  <i class="fa fa-facebook" aria-hidden="true"></i>  
+</button>
+<button type="button" class="button social twitter">
+  <i class="fa fa-twitter" aria-hidden="true"></i> 
+</button>
+
+  </div>   
+  </div>      
             	<h7> 
           	
        
