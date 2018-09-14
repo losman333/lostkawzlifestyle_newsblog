@@ -227,21 +227,12 @@ DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
     
 
 
-STATIC_ROOT = 'lostkawzlifestyle1/static/'
+STATIC_ROOT = 'lostkawzlifestyle1/staticfiles/'
 
 STATICFILES_LOCATION = 'static'
 STATICFILES_STORAGE = 'custom_storages.StaticStorage'
 
-STATIC_URL = '/static/'
-
-"https://%s/%s/" % (AWS_CLOUDFRONT_DOMAIN, STATICFILES_LOCATION)
-
-"https://%s/%s/" % (AWS_CLOUDFRONT_DOMAIN, STATICFILES_LOCATION)
-
-
-
-
-
+STATIC_URL = "https://%s/%s/" % (AWS_S3_CUSTOM_DOMAIN, STATICFILES_LOCATION)
 
 
 
