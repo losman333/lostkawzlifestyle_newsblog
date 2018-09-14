@@ -2289,15 +2289,7 @@ h6, .h6 {
   h6, .h6 {
     font-size: 1rem; } }
 
-a {
-  line-height: inherit;
-  color: #1779ba;
-  text-decoration: none;
-  cursor: pointer; }
-  a:hover, a:focus {
-    color: #1468a0; }
-  a img {
-    border: 0; }
+
 
 hr {
   clear: both;
@@ -5133,7 +5125,7 @@ a.thumbnail {
       flex-wrap: wrap; }
   .top-bar,
   .top-bar ul {
-    background-color: #000000; }
+    background-color: #FFFFFF; }
   .top-bar input {
     max-width: 200px;
     margin-right: 1rem; }
@@ -5146,7 +5138,6 @@ a.thumbnail {
   .top-bar .top-bar-right {
     -ms-flex: 0 0 100%;
         flex: 0 0 100%;
-        marging-top: 120px;
     max-width: 100%; }
   @media print, screen and (min-width: 40em) {
     .top-bar {
@@ -5159,6 +5150,7 @@ a.thumbnail {
       .top-bar .top-bar-right {
         -ms-flex: 0 1 auto;
             flex: 0 1 auto;
+            margin-top: 120px;
         margin-left: auto; } }
   @media screen and (max-width: 63.9375em) {
     .top-bar.stacked-for-medium {
