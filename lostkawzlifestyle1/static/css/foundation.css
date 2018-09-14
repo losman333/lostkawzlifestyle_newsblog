@@ -5146,6 +5146,7 @@ a.thumbnail {
   .top-bar .top-bar-right {
     -ms-flex: 0 0 100%;
         flex: 0 0 100%;
+        marging-top: 120px;
     max-width: 100%; }
   @media print, screen and (min-width: 40em) {
     .top-bar {
@@ -5186,9 +5187,7 @@ a.thumbnail {
 .top-bar-left,
 .top-bar-right {
   -ms-flex: 0 0 auto;
-      flex: 0 0 auto; 
-      margin-top: 120px;
-      }
+      flex: 0 0 auto; }
 
 .hide {
   display: none !important; }
