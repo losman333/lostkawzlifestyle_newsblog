@@ -10,11 +10,11 @@
     {% if article.is_featured %} featured{% endif %}
     {% if not article.published %} unpublished{% endif %}">
    
-       <h1>{% render_model article "title" "" "" "striptags" %}</h1>
+       <h3>{% render_model article "title" "" "" "striptags" %}</h3>
           	<div class="grid-x grid-padding-x">
           		<div class="cell auto">
   
-    
+
   
    	<h3 >{% render_model article "lead_in" "" "" "truncatewords:'20'|striptags" %}</h3>
    
@@ -88,8 +88,9 @@
 		
     {% endif %}
     </div>
+    <hr>
  </div>
- 
+
 	</div
 </article>
 </div>
