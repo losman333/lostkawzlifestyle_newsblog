@@ -224,18 +224,13 @@ DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
 
 
 
+
 STATIC_ROOT = 'lostkawzlifestyle1/staticfiles/'
 
 STATICFILES_LOCATION = 'static'
 STATICFILES_STORAGE = 'custom_storages.StaticStorage'
 
 STATIC_URL = "https://%s/%s/" % (AWS_S3_CUSTOM_DOMAIN, STATICFILES_LOCATION)
-
-
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "static"),
-]
-
 
 db_from_env = dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(db_from_env)
