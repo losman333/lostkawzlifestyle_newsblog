@@ -2479,27 +2479,7 @@ ul.no-bullet, ol.no-bullet {
   .print-break-inside {
     page-break-inside: auto; } }
 
-.button {
-  display: inline-block;
-  vertical-align: middle;
-  margin: 0 0 1rem 0;
-  font-family: inherit;
-  padding: 0.85em 1em;
-  -webkit-appearance: none;
-  border: 1px solid transparent;
-  border-radius: 0;
-  transition: background-color 0.25s ease-out, color 0.25s ease-out;
-  font-size: 0.9rem;
-  line-height: 1;
-  text-align: center;
-  cursor: pointer;
-  background-color: #1779ba;
-  color: #fefefe; }
-  [data-whatinput='mouse'] .button {
-    outline: 0; }
-  .button:hover, .button:focus {
-    background-color: #14679e;
-    color: #fefefe; }
+
   .button.tiny {
     font-size: 0.6rem; }
   .button.small {
@@ -4164,25 +4144,7 @@ select {
   .position-right.is-transition-push {
     box-shadow: inset 13px 0 20px -13px rgba(10, 10, 10, 0.25); }
 
-.position-top {
-  top: 0;
-  left: 0;
-  width: 100%;
-  overflow-x: auto;
-  height: 250px;
-  -ms-transform: translateY(-250px);
-      transform: translateY(-250px); }
-  .off-canvas-content .off-canvas.position-top {
-    -ms-transform: translateY(-250px);
-        transform: translateY(-250px); }
-    .off-canvas-content .off-canvas.position-top.is-transition-overlap.is-open {
-      -ms-transform: translate(0, 0);
-          transform: translate(0, 0); }
-  .off-canvas-content.is-open-top.has-transition-push {
-    -ms-transform: translateY(250px);
-        transform: translateY(250px); }
-  .position-top.is-transition-push {
-    box-shadow: inset 0 -13px 20px -13px rgba(10, 10, 10, 0.25); }
+
 
 .position-bottom {
   bottom: 0;

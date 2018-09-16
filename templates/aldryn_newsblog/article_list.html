@@ -8,7 +8,7 @@
 {% block newsblog_content %}
 	<br>
 	<br>
-	<div class="grid-x large-9 large-offset-5  ">
+	<div class="grid-x large-6 large-offset-5  ">
 		<div class="cell">
 			<h1>News</h1>
 		</div>
@@ -24,8 +24,7 @@
         
 	  
 		
-		<hr>
-      
+		
 	  
     {% for article in article_list %}
     
@@ -41,9 +40,11 @@
     <br>
 {% endfor %}  
 
-
+<div class="grid-x large-6 large-offset-4">
+	<div class="cell">
 {% include "aldryn_newsblog/includes/pagination.html" %}
-				
+	</div>
+</div>				
           
  
   
