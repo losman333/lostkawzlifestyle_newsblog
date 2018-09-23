@@ -11,7 +11,7 @@
     <meta property="og:url"           content="{{ request.build.absolute.uri }}" />
  	<meta property="og:type"          content="website" />
   	<meta property="og:title"         content="{{ request.site.name }}" />
-  	<meta property="og:description"   content="The Latest in the Underground" />
+  	<meta property="og:description"   content="{% render_model article "lead_in" "" "" "striptags" %}" />
   	<meta property="og:image"         content="{% thumbnail article.featured_image 960x593 crop subject_location=article.featured_image.subject_location %}" alt="{{ article.featured_image.alt }}" />
     <title>{% block title %}{% page_attribute page_title %} - {{ request.site.name }}{% endblock title %}</title>
     <link rel="stylesheet" href="{% static 'css/foundation.css' %}">
