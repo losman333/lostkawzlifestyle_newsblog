@@ -14,12 +14,13 @@
                <div class="cell "> 	   	
     <h1>{% render_model article "title" "" "" "striptags" %}</h1>
     
-	<a href="https://www.facebook.com/sharer/sharer.php?u={{ request.build_absolute.url }}">
-<img src="https://s3-us-west-1.amazonaws.com/lostkawzlifestyle/images/fbc.png" alt="logo" style="width:20px;height:20px;">
-</a>
+				<a href="https://www.facebook.com/sharer/sharer.php?u={{ request.build.absolute.uri }}">
+					<img src="https://s3-us-west-1.amazonaws.com/lostkawzlifestyle/images/fbc.png" alt="logo" style="width:20px;height:20px;"></a> 
+				</a>
+				
+				<img src="https://s3-us-west-1.amazonaws.com/lostkawzlifestyle/images/twtc.png" alt="logo" style="width:20px;height:20px;"></a> 
+				<img src="https://s3-us-west-1.amazonaws.com/lostkawzlifestyle/images/ytc.png" alt="logo" style="width:20px;height:20px;"></a> 
 
-<a href="https://twitter.com/home?status=I'm%20going%20to%20learn%20to%20Code...%20Come%20build%20an%20web%20apsp%20with%20me!%20%23CFE%20and%20@justinmitchel%20http://codingforentrepreneurs.com/">
-<img src="https://s3-us-west-1.amazonaws.com/lostkawzlifestyle/images/twtc.png" alt="logo" style="width:20px;height:20px;"></a> 
     <span class="meta">
         by
         <a href="{% namespace_url 'article-detail' article.slug namespace=namespace default='' %}">
