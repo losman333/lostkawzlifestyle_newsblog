@@ -205,6 +205,8 @@ USE_L10N = True
 
 USE_TZ = True
 
+
+
 MAILCHIMP_API_KEY = config('MAILCHIMP_API_KEY')
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
