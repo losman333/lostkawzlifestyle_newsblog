@@ -14,7 +14,7 @@
                <div class="cell "> 	   	
     <h1>{% render_model article "title" "" "" "striptags" %}</h1>
     			<div class="fb-share-button" 
-    data-href="https://lostkawz.com" 
+    data-href="{{ request.build.absolute.uri }}" 
     data-layout="button_count">
   </div>
 				<a href="https://www.facebook.com/sharer/sharer.php?u={{ request.build.absolute.uri }}">
