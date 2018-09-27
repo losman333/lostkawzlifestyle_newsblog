@@ -13,10 +13,7 @@
 
                <div class="cell "> 	   	
     <h1>{% render_model article "title" "" "" "striptags" %}</h1>
-    			<div class="fb-share-button" 
-    data-href="{{ request.build.absolute.uri }}" 
-    data-layout="button">
-  </div>
+    			
 				
     <span class="meta">
         by
@@ -26,7 +23,12 @@
         on {{ article.publishing_date|date:"F n, Y" }}
     </span>
 
-
+	<br>
+	
+	<div class="fb-share-button" 
+    data-href="{{ request.build.absolute.uri }}" 
+    data-layout="button">
+  </div>
               
            
         
