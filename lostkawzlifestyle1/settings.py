@@ -227,7 +227,7 @@ DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
 
 
 
-STATIC_ROOT = 'lostkawzlifestyle1/staticfiles/'
+STATIC_ROOT = 'static'
 
 STATICFILES_LOCATION = 'static'
 
