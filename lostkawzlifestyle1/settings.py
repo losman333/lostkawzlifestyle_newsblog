@@ -185,7 +185,8 @@ CMS_TEMPLATES = [
     
 ]
 
-
+DJANGOCMS_STYLE_TAGS = ['div', 'article', 'hr', 'br', 'section', 'header', 'footer',
+                        'h1', 'h2', 'h3', 'h4', 'h5', 'h6']
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.9/topics/i18n/
@@ -227,14 +228,15 @@ DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
 
 
 
-STATIC_ROOT = 'static'
+STATIC_ROOT = '/static/'
 
-STATICFILES_LOCATION = 'static'
+STATIC_URL = '/static/'
+STATICFILES_LOCATION = '/static/'
 
-#STATIC_URL = '/static/'
-STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
-STATIC_URL = "https://%s/%s/" % (AWS_S3_CUSTOM_DOMAIN, STATICFILES_LOCATION)
+
+#STATICFILES_STORAGE = 'custom_storages.StaticStorage'
+#STATIC_URL = "https://%s/%s/" % (AWS_S3_CUSTOM_DOMAIN, STATICFILES_LOCATION)
 
 
 STATICFILES_DIRS = [ os.path.join(BASE_DIR, "static"),]
