@@ -1,1 +1,1 @@
-web: gunicorn proppa.wsgi --preload
+web: gunicorn lostkawzlifestyle1.wsgi --preload
