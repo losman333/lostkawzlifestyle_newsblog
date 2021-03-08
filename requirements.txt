@@ -21,7 +21,7 @@ colorama==0.3.7
 cssselect==1.0.1
 cssutils==1.0.2
 dj-database-url==0.5.0
-Django==1.9.12
+Django==1.9.10
 django-absolute==0.3
 django-admin-sortable==2.0.22
 django-appconf==1.0.2
@@ -89,6 +89,7 @@ PyYAML==3.12
 requests==2.13.0
 requests-oauthlib==0.8.0
 rsa==3.4.2
+s3cmd==2.1.0
 s3transfer==0.1.10
 six==1.10.0
 tablib==0.11.4
